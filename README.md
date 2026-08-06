@@ -38,3 +38,13 @@ App Store に登録した「サポート URL」と「プライバシーポリシ
 ---
 
 Astrarium © 2026 Avellsky. All rights reserved.
+
+## Meteorium
+
+| 場所 | 公開先 | 内容 |
+|---|---|---|
+| `Meteorium/index.html` | [/Meteorium/](https://avellsky.github.io/Meteorium/) | Meteorium のサポートページ。マニュアル、プライバシーポリシー、連絡先 |
+| `Meteorium/manual/` | [/Meteorium/manual/](https://avellsky.github.io/Meteorium/manual/) | ユーザーマニュアル（日本語・英語、HTML / Markdown） |
+| `Meteorium/privacy-policy.ja.html` | [/Meteorium/privacy-policy.ja.html](https://avellsky.github.io/Meteorium/privacy-policy.ja.html) | プライバシーポリシー（日本語） |
+| `Meteorium/privacy-policy.en.html` | [/Meteorium/privacy-policy.en.html](https://avellsky.github.io/Meteorium/privacy-policy.en.html) | プライバシーポリシー（英語） |
+| `Meteorium/icon.png` | — | アプリのアイコン |
