@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meteorium — ユーザーマニュアル / User Manual</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0d0d0d; color: #c3c2b7;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.75; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 28px 20px 60px; }
+  h1 { color: #fff; font-size: 26px; margin: 8px 0 2px; }
+  h2 { color: #fff; font-size: 19px; margin-top: 34px;
+    border-bottom: 1px solid rgba(255,255,255,.14); padding-bottom: 6px; }
+  h3 { color: #e8e7df; font-size: 15px; margin-top: 22px; }
+  .sub { color: #898781; margin-bottom: 20px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid rgba(255,255,255,.14); padding: 7px 10px;
+    text-align: left; vertical-align: top; }
+  th { color: #fff; background: rgba(255,255,255,.05); white-space: nowrap; }
+  code, b.k { color: #86b6ef; font-weight: 600; }
+  ul { padding-left: 22px; }
+  li { margin: 3px 0; }
+  .nav { display: flex; gap: 10px; flex-wrap: wrap; margin: 14px 0 6px; }
+  .nav a { color: #86b6ef; text-decoration: none; font-size: 13px;
+    border: 1px solid rgba(57,135,229,.4); border-radius: 999px;
+    padding: 4px 14px; }
+  .note { background: rgba(57,135,229,.10); border: 1px solid rgba(57,135,229,.35);
+    border-radius: 10px; padding: 10px 14px; font-size: 14px; }
+  footer { margin-top: 48px; color: #898781; font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,.14); padding-top: 14px; }
+  figure { margin: 18px 0; }
+  figure img { width: 100%; height: auto; display: block; border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.14); }
+  figcaption { font-size: 12px; color: #898781; margin-top: 6px;
+    text-align: center; }
+</style>
+</head>
+<body><div class="wrap">
+
+<h1>Meteorium</h1>
+<div class="sub">流星ダストトレイル・ビューア — ユーザーマニュアル(無料版)/
+User Manual (Free Edition)</div>
+<div class="nav">
+  <a href="#ja">日本語</a><a href="#en">English</a><a href="#privacy">プライバシー / Privacy</a>
+</div>
+
+<h2 id="ja">日本語マニュアル</h2>
+<p>Meteorium は、流星群のもとになる「ダストトレイル」(彗星が軌道上に残した塵の帯)を
+科学計算に基づいて 3D 表示する天文アプリです。無料版には、ペルセウス座流星群の母彗星
+109P/スウィフト・タトルが残した <b>5回帰ぶん(1479・1610・1737・1862・1992年)の
+ダストトレイル 5,000 粒子</b>が収録されています。粒子の軌道は REBOUND/ReboundX による
+軌道積分(惑星重力+太陽放射圧)で計算し、背景の空には NASA「Deep Star Maps 2020」を
+使用しています。完全オフラインで動作し、データ収集・広告はありません。</p>
+
+<h3>画面の構成</h3>
+<figure><img src="img/fig_overview.jpg" alt="図1: 画面構成 — 中央が3D表示、右がパネル、下部が時間操作バー" loading="lazy"><figcaption>図1: 画面構成 — 中央が3D表示、右がパネル、下部が時間操作バー</figcaption></figure>
+<table>
+<tr><th>場所</th><th>内容</th></tr>
+<tr><td>中央</td><td>3D 表示(ドラッグ=視点回転、ピンチ/ホイール=ズーム)</td></tr>
+<tr><td>右上</td><td>EN/JP(言語切替)、ⓘ(パネル開閉)</td></tr>
+<tr><td>右パネル</td><td>データセット・トレイル凡例・表示設定・視点・粒子設定</td></tr>
+<tr><td>下部バー</td><td>日時(UT)・日付入力・今日・視点・時間操作</td></tr>
+</table>
+<p>パネルと下部バーはつまみをドラッグして移動できます。パネル下端のつまみで表示の長さも
+調整できます。右上の ▼ ボタンで下部バーを畳めます。</p><figure><img src="img/fig_footer.jpg" alt="図2: 下部バー — 日時・日付入力・今日・視点・時間操作・速度スライダー" loading="lazy"><figcaption>図2: 下部バー — 日時・日付入力・今日・視点・時間操作・速度スライダー</figcaption></figure>
+
+<h3>ダストトレイル(放出年)</h3>
+<figure><img src="img/fig_panel.jpg" alt="図3: 右パネル — データセット・流星群の諸元・トレイル凡例・表示設定" loading="lazy"><figcaption>図3: 右パネル — データセット・流星群の諸元・トレイル凡例・表示設定</figcaption></figure>
+<p>凡例の色付きチップは放出年ごとのトレイルです。タップで個別に表示/非表示を切り替え
+られます。「1992」は前回回帰(1992年12月12日)の最も新しい塵、古い年ほど軌道に沿って
+広がっています。</p>
+
+<h3>表示設定</h3>
+<p>天の川/星座線/星座名/彗星名/地球名/地球型惑星/木星型惑星/惑星/軌道線/
+<b>粒子</b>/放射点。起動時の既定値では星座線・星座名・地球型惑星・放射点が OFF です
+(無料版は毎回この既定値で起動します)。</p>
+
+<h3>視点</h3>
+<table>
+<tr><th>ボタン</th><th>動作</th></tr>
+<tr><td>黄道面北 / 南</td><td>真上/真下から。押すたびに 45° ずつ回転</td></tr>
+<tr><td>黄緯変化</td><td>現在の黄経を固定し、押すたびに黄緯を 30° ずつ変化</td></tr>
+<tr><td>太陽</td><td>太陽中心に固定。押すたびに ①春分点方向 → ②彗星追尾 → ③地球追尾。
+左上に現在モードを表示。ドラッグしても追尾は継続</td></tr>
+<tr><td>地球</td><td>地上から放射点方向を見る観察視点(下記)</td></tr>
+<tr><td>彗星</td><td>彗星と一緒に移動。押すたびに ①前方カメラ → ②後方カメラ →
+③2画面(左=後方/右=前方)→ ①。左上にカメラ名を表示</td></tr>
+<tr><td>フリー視点</td><td>10秒ごとに視点と倍率が自動で移り変わる観賞モード。
+再度押すかドラッグで停止</td></tr>
+</table>
+<p>地球視点に入ると放射点・星座線・星座名が自動 ON、離れると放射点は自動 OFF になります。</p><figure><img src="img/fig_north.jpg" alt="図4: 黄道面北 — 5回帰ぶんのダストトレイルと彗星軌道の全景" loading="lazy"><figcaption>図4: 黄道面北 — 5回帰ぶんのダストトレイルと彗星軌道の全景</figcaption></figure><figure><img src="img/fig_comet.jpg" alt="図5: 彗星視点の2画面モード(左=後方カメラ/右=前方カメラ)" loading="lazy"><figcaption>図5: 彗星視点の2画面モード(左=後方カメラ/右=前方カメラ)</figcaption></figure>
+
+<h3>地球視点の流星ショー</h3><figure><img src="img/fig_ground.jpg" alt="図6: 地上視点 — 放射点から四方八方へ流れるペルセウス座流星群(2026年8月13日)" loading="lazy"><figcaption>図6: 地上視点 — 放射点から四方八方へ流れるペルセウス座流星群(2026年8月13日)</figcaption></figure>
+<div class="note">流星は<b>活動期間内</b>(ペルセウス座群: 7月17日〜8月24日)の日付の
+ときだけ発生します。時間を進めて「流星群の季節」を体験してください。</div>
+<ul>
+<li>表示は ZHR=5,000 相当。流星は全天に出現し、経路の延長は必ず放射点を通ります</li>
+<li>放射点付近では遅く・短く・太く明るく、離れるほど速く・長く・細く暗く(実際の遠近効果)</li>
+<li><b>火球</b>(約7%): ひときわ明るい大流星。あとに<b>永続痕</b>(漂う光の筋)を残すことがあります</li>
+<li><b>流星クラスター</b>(約4%): 数秒間に多数の流星が同じ領域から平行に流れる珍現象</li>
+<li><b>静止流星</b>(約2%): 放射点の真芯で、動かない点がふっと光る「正面から来る流星」</li>
+<li>惑星は実際の<b>色と等級</b>で表示(金星は明るく、海王星はほぼ見えません)</li>
+</ul>
+
+<h3>時間操作</h3>
+<ul>
+<li>日付欄に任意の日付を入力(紀元前はマイナス年)。「今日」で現在へ</li>
+<li><b>■</b>: 押すと停止、もう一度押すと<b>実時間(×1)</b>で進行</li>
+<li><b>&lt; / &gt;</b>: 押すたびに ×2 → ×10 → ×100 → ×500 → ×1000 → ×5000 → ×10000</li>
+<li>スライダー: 中央=停止、左右で無段階の速度調整</li>
+</ul>
+
+<h3>粒子設定・言語</h3>
+<p>表示粒子数 10/25/50/100%(重い端末では減らしてください)、サイズ 大/中/小。
+右上のボタンで日本語⇄英語を切り替えます。</p>
+
+<h3>Pro 版(Meteorium Pro)でできること</h3>
+<ul>
+<li>全13流星群+IAU MDC 確定群の理論トレイル計算(回帰数・粒子数・非重力効果などを指定)</li>
+<li>IAU MDC 観測アーカイブ(CAMS・SonotaCo・EDMOND・GMN・OTH)からの実観測データ計算</li>
+<li>流星群予報: ZHR プロファイル(IMO予報/計算結果)+ダストトレイル断面図</li>
+<li>JPL DE 暦の選択、録画(MP4)、PNG/PDF 書き出し、データセット保存、設定の記憶</li>
+</ul>
+<p>各流星群の諸元(活動期間・極大・ZHR・V∞・光度比 r・放射点)は IMO Meteor Shower
+Calendar に準拠しています。</p>
+
+<h2 id="en">English Manual</h2>
+<p>Meteorium visualises the dust trails behind meteor showers in 3D, based on
+real orbital dynamics. The free edition ships with <b>5,000 dust grains from
+five perihelion returns (1479–1992) of comet 109P/Swift-Tuttle</b>, the parent
+of the Perseids, integrated with REBOUND/ReboundX (planetary gravity + solar
+radiation pressure) against NASA's Deep Star Maps 2020. Fully offline; no data
+collection, no ads.</p>
+
+<h3>Basics</h3><figure><img src="img/fig_overview.jpg" alt="Fig. 1: Screen layout — 3D view, side panel, bottom time bar" loading="lazy"><figcaption>Fig. 1: Screen layout — 3D view, side panel, bottom time bar</figcaption></figure>
+<ul>
+<li>Drag to rotate, pinch/wheel to zoom. Panels move by their grips.</li>
+<li>Trail legend chips toggle each ejection-year trail.</li>
+<li>Display toggles: Milky Way, constellation lines/names, comet/Earth labels,
+terrestrial/giant planet names, planets, orbit lines, particles, radiant.</li>
+</ul>
+
+<h3>Viewpoints</h3>
+<ul>
+<li><b>Ecliptic N/S</b> — top/bottom view, each press rotates 45°.</li>
+<li><b>Ecl. latitude</b> — fixes the current longitude, steps latitude by 30°.</li>
+<li><b>Sun</b> — pinned to the Sun; presses cycle vernal equinox → comet
+tracking → Earth tracking (caption top-left; tracking survives drags).</li>
+<li><b>Earth</b> — ground view toward the radiant with a live meteor shower
+(ZHR 5,000) during the activity period (Jul 17 – Aug 24): meteors all over the
+sky, perspective-true speeds and brightness, fireballs with persistent trains,
+meteor clusters, stationary meteors, and planets at true colour/magnitude.</li>
+<li><b>Comet</b> — rides the comet; presses cycle front → rear → split screen
+(rear|front) with captions.</li>
+<li><b>Free view</b> — an auto tour changing view and zoom every 10 s.</li>
+</ul>
+
+<figure><img src="img/fig_ground.jpg" alt="Fig. 2: Ground view — Perseids radiating from the radiant (2026-08-13)" loading="lazy"><figcaption>Fig. 2: Ground view — Perseids radiating from the radiant (2026-08-13)</figcaption></figure><h3>Time</h3>
+<p>Date entry (BC as negative years), Today, ■ toggles stop ⇄ real time (×1),
+arrows step ×2 → ×10 → … → ×10000, stepless slider.</p>
+
+<h3>Meteorium Pro adds</h3>
+<p>All 13 major showers + IAU MDC established showers, theory computation with
+adjustable parameters, IAU MDC observed archives (CAMS/SonotaCo/EDMOND/GMN/OTH),
+ZHR forecasting with trail cross-sections, JPL DE ephemerides, recording,
+PNG/PDF export and persistent settings. Shower parameters follow the IMO
+Meteor Shower Calendar.</p>
+
+<h2 id="privacy">プライバシーポリシー / Privacy Policy</h2>
+<p>本アプリは、個人情報を含むいかなるデータも収集・送信・保存しません。完全に
+オフラインで動作し、広告・トラッキング・解析ツール・アカウント機能はありません。
+設定はお使いの端末内にのみ保存されます。</p>
+<p>The app does not collect, transmit, or store any data. It works fully
+offline, with no ads, tracking, analytics, or accounts. Preferences are stored
+only on your device.</p>
+<p>お問い合わせ / Contact: avellsky@gmail.com</p>
+
+<footer>© Meteorium, Avellsky — Last updated 2026-08-06</footer>
+</div></body>
+</html>
