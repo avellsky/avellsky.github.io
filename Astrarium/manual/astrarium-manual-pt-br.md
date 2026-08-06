@@ -8,7 +8,7 @@
 ## Sumário
 
 1. Introdução  
-2. A tela  
+2. Tela de Início
 3. Escolhendo onde você está  
 4. Controlando o mapa  
 5. Movendo-se no tempo  
@@ -44,7 +44,7 @@ As posições vêm da efeméride JPL DE421, dos modelos de precessão e nutaçã
 Uma conexão com a internet é necessária apenas para **atualizar** três coisas:
 
 - elementos orbitais de satélites (TLEs),
-- elementos de cometas e asteroides (do MPC e do JPL),
+- elementos orbitais de cometas e asteroides (do MPC e do JPL),
 - sua posição atual (isso usa os serviços de localização, não a rede).
 
 ### 1.2 Primeiros passos
@@ -67,14 +67,14 @@ A tela é dividida em cinco faixas, de cima para baixo.
 | Barra de tempo | Abaixo daquela | Modo de visualização, grades, mover e reproduzir o relógio |
 | Assinatura  | Inferior        | Logotipo e autor, ambos links                  |
 
-**Figura 1.** A visualização de céu inteiro (Tóquio, 12 de agosto de 2026, 20:00)
+**Figura 1.** Visão de céu aberto (Brasil, 03 de agosto, 19:48)
 
 ### 2.1 A barra superior
 
-**Figura 2.** A barra superior: categoria e local do sítio, localização, painel, idioma, visão noturna
+**Figura 2.** A barra superior: categoria da região, região, localização, idioma, visão noturna
 
 - **Relógio** — hora local no local de observação, Tempo Universal (UT) e Tempo Sideral Local (LST) lado a lado. O LST indica qual ascensão reta está no meridiano neste momento, o que é necessário ao apontar um telescópio.  
-- **Categoria do sítio** — prefeituras japonesas, bons locais de observação, cidades do mundo, observatórios etc. Ao escolher observatórios, aparece um segundo menu **Região** para filtrar por continente.  
+- **Categoria da região** — prefeituras japonesas, bons locais de observação, cidades do mundo, observatórios etc. Ao escolher observatórios, aparece um segundo menu **Região** para filtrar por continente.  
 - **Sítio** — o local em si. As prefeituras e os locais de céu escuro vão do norte para o sul; as cidades do mundo estão em ordem alfabética, pela leitura do nome quando o aplicativo está em japonês.  
 - 📍 — usar sua posição atual.  
 - ☰ — abrir ou fechar o painel de detalhes (seis abas).  
@@ -110,10 +110,10 @@ Mudar o sítio atualiza o relógio, os horários de nascer e ocaso e toda a geom
 
 Alterne com **Céu inteiro** e **Horizonte** à esquerda da barra de tempo.
 
-- **Céu inteiro** — o céu todo como um círculo centrado no zênite, norte para cima e leste para a esquerda, exatamente como em um planisfério de papelão. A Via Láctea é desenhada nesta visualização.  
+- **Céu inteiro (All-Sky)** — o céu todo como um círculo centrado no zênite, norte para cima e leste para a esquerda, exatamente como em um planisfério de papelão. A Via Láctea é desenhada nesta visualização.  
 - **Horizonte** — parte do céu desenhada como você realmente a veria olhando para fora. O menu ao lado do botão escolhe para que lado você está olhando: N, L, S, O.
 
-**Figura 3.** Visualização de horizonte, olhando para o sul, campo de 110 graus
+**Figura 3.** Visualização de horizonte, olhando para o sul, campo de 120 graus
 
 ### 4.2 Gestos
 
@@ -132,18 +132,18 @@ Arrastar na visualização de céu inteiro é o gesto do planisfério: o disco g
 
 O popup mostra o nome, ascensão reta e declinação, azimute e altitude e a magnitude, com botões embaixo.
 
-**Figura 4.** Saturno tocado: coordenadas, magnitude, nascer e ocaso, e dois botões
+**Figura 4.** Vênus selecionado: coordenadas, magnitude, nascer e pôr, e dois botões extras
 
-- **Centralizar e ampliar** — coloca o objeto no meio da tela, amplia e começa a rastreá-lo. Enquanto rastreia, o objeto permanece centralizado conforme o relógio avança. Solte-o com o botão Liberar no mapa ou com a tecla Esc; deslocar a visualização não interrompe o rastreamento.  
-- **Visualização ampliada** (Sol, Lua e planetas) — abre uma janela que desenha o corpo como um disco. A Lua vem com sua idade, fração iluminada, libração e nome popular (Lua Rosa, supermoon etc.); Júpiter com as quatro luas galileanas; Saturno com os anéis e Titã; Marte com Fobos e Deimos. Você pode arrastar dentro da janela.
+- **Centre & zoom/Centralizar e ampliar** — coloca o objeto no meio da tela, amplia e começa a rastreá-lo. Enquanto rastreia, o objeto permanece centralizado conforme o relógio avança. Solte-o com o botão Liberar no mapa ou com a tecla Esc; deslocar a visualização não interrompe o rastreamento.  
+- **Zoom view/Visualização ampliada** (Sol, Lua e planetas) — abre uma janela que desenha o corpo como um disco. A Lua vem com sua idade, fração iluminada, libração e nome popular (Lua Rosa, supermoon etc.); Júpiter com as quatro luas galileanas; Saturno com os anéis e Titã; Marte com Fobos e Deimos. Você pode arrastar dentro da janela.
 
-**Figura 5.** A visualização ampliada de Saturno, com os anéis e suas luas
+**Figura 5.** Visualização ampliada de Vênus e sua porção iluminada
 
 Escolher um objeto de céu profundo traz uma fotografia e uma breve descrição; um cometa ou asteroide traz seus elementos orbitais e brilho estimado; um satélite traz seu alcance, altura e magnitude aparente com um botão **Próximas passagens visíveis**.
 
-Com a arte das constelações ligada, tocar em uma das doze constelações zodiacais mostra o signo astrológico correspondente e suas datas de nascimento, junto com uma nota de que a precessão moveu os signos cerca de um mês em relação a onde o Sol realmente está.
+**Com a arte das constelações ligada, tocar em uma das doze constelações zodiacais** mostra o signo astrológico correspondente e suas datas de nascimento, junto com uma nota de que a precessão moveu os signos cerca de um mês em relação a onde o Sol realmente está.
 
-**Figura 6.** O céu inteiro com as figuras das constelações desenhadas
+**Figura 6.** Todo o céu com os desenhos e figuras das constelações
 
 ---
 
@@ -181,7 +181,7 @@ O botão **Grades** abre um menu de sobreposições; você pode ter várias ao m
 
 O espaçamento das linhas e a precisão dos rótulos acompanham o nível de zoom.
 
-**Figura 7.** O menu de grades, com a grade RA-Dec e a eclíptica desenhadas
+**Figura 7.** O menu de grade com opções RA-Dec e eclíptica selecionados e suas plotagens na tela
 
 ---
 
@@ -208,7 +208,7 @@ A primeira linha controla o próprio mapa; a segunda, os tipos de objeto.
 | Eventos     | Abre a aba Eventos                                    |
 | Info        | Abre a aba Info                                       |
 
-**Figura 8.** A barra rápida e a barra de tempo
+**Figura 8.** Barra de visualização rápida e de controle de tempo
 
 ### 6.2 A aba Visualização (☰ → Visualização)
 
@@ -217,8 +217,8 @@ Tudo o que a barra rápida não carrega fica aqui.
 - **Planetas** — mostrar ou ocultar os planetas.  
 - **Sol e luz da Lua** — luz do dia, crepúsculo e o brilho da Lua. Desligue para desenhar o céu como se fosse sempre escuro, o que serve para verificar onde estão as estrelas durante o dia.  
 - **Espelho** — inverte a imagem para um buscador de telescópio que inverte.  
-- **Trilhas de estrelas** — deixa um rastro atrás dos objetos em movimento durante a reprodução, de modo que o movimento diurno e as passagens de satélites são desenhados como linhas.  
-- **Molduras de FOV** — retângulos para o campo de uma câmera ou círculos para uma ocular, sobrepostos ao mapa. “Adicionar moldura”, depois informe o tamanho do sensor e a distância focal, ou o campo aparente e a ampliação. Arraste o centro para mover a moldura, clique no centro para ampliar até ela, arraste um canto para girar. Útil para enquadrar uma fotografia ou para ver o que caberá no campo.  
+- **Trilhas de estrelas** — (Star-trails) deixa um rastro atrás dos objetos em movimento durante a reprodução, de modo que o movimento diurno e as passagens de satélites são desenhados como linhas.  
+- **Campo de visão (FOV)** — retângulos para o campo de uma câmera ou círculos para uma ocular, sobrepostos ao mapa. “Adicionar moldura”, depois informe o tamanho do sensor e a distância focal, ou o campo aparente e a ampliação. Arraste o centro para mover a moldura, clique no centro para ampliar até ela, arraste um canto para girar. Útil para enquadrar uma fotografia ou para ver o que caberá no campo.  
 - **Limite de mag** — o mesmo controle deslizante da barra rápida.
 
 **Figura 9.** A aba Visualização
@@ -232,7 +232,7 @@ Salva o mapa para o horário e local atuais como imagem. Como esses arquivos se 
 - a Via Láctea é desenhada apenas como contornos, sem preenchimento,  
 - a data, a hora e Astrarium © Avellsky aparecem no canto inferior direito.
 
-**Figura 10.** Um mapa exportado: a Via Láctea desenhada como contornos em papel branco
+**Figura 10.** Um mapa exportado: a Via Láctea desenhada como contornos em papel branco.
 
 ### 6.4 Demonstração e gravação
 
@@ -244,7 +244,7 @@ Salva o mapa para o horário e local atuais como imagem. Como esses arquivos se 
 
 ## 7. Chuvas de meteoros
 
-Use a aba Corpos ou o botão Chuvas na barra rápida.
+Use a aba **Bodies** (corpos) ou o botão **Showers** (chuvas) na barra rápida.
 
 ### 7.1 A lista
 
@@ -256,7 +256,7 @@ O menu contém as principais chuvas do ano, ordenadas pela proximidade de seu m�
 | Radiante           | Ascensão reta e declinação, com sua altitude no máximo e agora |
 | Velocidade de entrada | Quão rápido os meteoroides encontram a atmosfera   |
 | Índice populacional r | A proporção de meteoros brilhantes; quanto menor, mais brilhantes |
-| Corpo-pai          | O cometa ou asteroide de onde veio o enxame           |
+| Corpo-pai          | O cometa ou asteroide de onde veio o enxame (detritos)           |
 | Taxa esperada      | Meteoros por hora, a partir do modelo abaixo          |
 
 ### 7.2 Como a taxa é calculada
@@ -270,7 +270,7 @@ O número em “por hora” não é o ZHR ideal — é o que você pode esperar 
 
 As chuvas ativas também são listadas em uma caixa laranja no topo do mapa. Tocar em um nome na caixa abre seus detalhes; **Liberar** limpa a caixa (e desliga o botão Chuvas na barra rápida junto com ela).
 
-**Figura 11.** O máximo das Perseidas (13 de agosto, 3h, 64 por hora esperados)
+**Figura 11.** O máximo de Perseidas (13 de agosto, 2 AM, 64 meteoros por hora estimado no hemisfério norte)
 
 ---
 
