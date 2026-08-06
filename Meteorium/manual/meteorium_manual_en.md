@@ -24,6 +24,10 @@ ships with **5,000 dust grains from five perihelion returns (1479, 1610,
 Panels can be dragged anywhere by their grips; the side panel's height is
 adjustable from its bottom grip.
 
+- The **▼** button on the bottom bar collapses it to a single ▲ button
+- In landscape the speed slider gets its own full-width second row
+- Rotating the device always brings the panels back on screen
+
 ## Dust trails
 
 Colored chips list the trails by ejection year; tap to toggle each.
