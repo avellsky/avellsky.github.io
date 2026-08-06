@@ -30,6 +30,11 @@
     border-radius: 10px; padding: 10px 14px; font-size: 14px; }
   footer { margin-top: 48px; color: #898781; font-size: 13px;
     border-top: 1px solid rgba(255,255,255,.14); padding-top: 14px; }
+  figure { margin: 18px 0; }
+  figure img { width: 100%; height: auto; display: block; border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.14); }
+  figcaption { font-size: 12px; color: #898781; margin-top: 6px;
+    text-align: center; }
 </style>
 </head>
 <body><div class="wrap">
@@ -50,6 +55,7 @@ User Manual (Free Edition)</div>
 使用しています。完全オフラインで動作し、データ収集・広告はありません。</p>
 
 <h3>画面の構成</h3>
+<figure><img src="img/fig_overview.jpg" alt="図1: 画面構成 — 中央が3D表示、右がパネル、下部が時間操作バー" loading="lazy"><figcaption>図1: 画面構成 — 中央が3D表示、右がパネル、下部が時間操作バー</figcaption></figure>
 <table>
 <tr><th>場所</th><th>内容</th></tr>
 <tr><td>中央</td><td>3D 表示(ドラッグ=視点回転、ピンチ/ホイール=ズーム)</td></tr>
@@ -58,9 +64,10 @@ User Manual (Free Edition)</div>
 <tr><td>下部バー</td><td>日時(UT)・日付入力・今日・視点・時間操作</td></tr>
 </table>
 <p>パネルと下部バーはつまみをドラッグして移動できます。パネル下端のつまみで表示の長さも
-調整できます。</p>
+調整できます。右上の ▼ ボタンで下部バーを畳めます。</p><figure><img src="img/fig_footer.jpg" alt="図2: 下部バー — 日時・日付入力・今日・視点・時間操作・速度スライダー" loading="lazy"><figcaption>図2: 下部バー — 日時・日付入力・今日・視点・時間操作・速度スライダー</figcaption></figure>
 
 <h3>ダストトレイル(放出年)</h3>
+<figure><img src="img/fig_panel.jpg" alt="図3: 右パネル — データセット・流星群の諸元・トレイル凡例・表示設定" loading="lazy"><figcaption>図3: 右パネル — データセット・流星群の諸元・トレイル凡例・表示設定</figcaption></figure>
 <p>凡例の色付きチップは放出年ごとのトレイルです。タップで個別に表示/非表示を切り替え
 られます。「1992」は前回回帰(1992年12月12日)の最も新しい塵、古い年ほど軌道に沿って
 広がっています。</p>
@@ -83,9 +90,9 @@ User Manual (Free Edition)</div>
 <tr><td>フリー視点</td><td>10秒ごとに視点と倍率が自動で移り変わる観賞モード。
 再度押すかドラッグで停止</td></tr>
 </table>
-<p>地球視点に入ると放射点・星座線・星座名が自動 ON、離れると放射点は自動 OFF になります。</p>
+<p>地球視点に入ると放射点・星座線・星座名が自動 ON、離れると放射点は自動 OFF になります。</p><figure><img src="img/fig_north.jpg" alt="図4: 黄道面北 — 5回帰ぶんのダストトレイルと彗星軌道の全景" loading="lazy"><figcaption>図4: 黄道面北 — 5回帰ぶんのダストトレイルと彗星軌道の全景</figcaption></figure><figure><img src="img/fig_comet.jpg" alt="図5: 彗星視点の2画面モード(左=後方カメラ/右=前方カメラ)" loading="lazy"><figcaption>図5: 彗星視点の2画面モード(左=後方カメラ/右=前方カメラ)</figcaption></figure>
 
-<h3>地球視点の流星ショー</h3>
+<h3>地球視点の流星ショー</h3><figure><img src="img/fig_ground.jpg" alt="図6: 地上視点 — 放射点から四方八方へ流れるペルセウス座流星群(2026年8月13日)" loading="lazy"><figcaption>図6: 地上視点 — 放射点から四方八方へ流れるペルセウス座流星群(2026年8月13日)</figcaption></figure>
 <div class="note">流星は<b>活動期間内</b>(ペルセウス座群: 7月17日〜8月24日)の日付の
 ときだけ発生します。時間を進めて「流星群の季節」を体験してください。</div>
 <ul>
@@ -127,7 +134,7 @@ of the Perseids, integrated with REBOUND/ReboundX (planetary gravity + solar
 radiation pressure) against NASA's Deep Star Maps 2020. Fully offline; no data
 collection, no ads.</p>
 
-<h3>Basics</h3>
+<h3>Basics</h3><figure><img src="img/fig_overview.jpg" alt="Fig. 1: Screen layout — 3D view, side panel, bottom time bar" loading="lazy"><figcaption>Fig. 1: Screen layout — 3D view, side panel, bottom time bar</figcaption></figure>
 <ul>
 <li>Drag to rotate, pinch/wheel to zoom. Panels move by their grips.</li>
 <li>Trail legend chips toggle each ejection-year trail.</li>
@@ -150,7 +157,7 @@ meteor clusters, stationary meteors, and planets at true colour/magnitude.</li>
 <li><b>Free view</b> — an auto tour changing view and zoom every 10 s.</li>
 </ul>
 
-<h3>Time</h3>
+<figure><img src="img/fig_ground.jpg" alt="Fig. 2: Ground view — Perseids radiating from the radiant (2026-08-13)" loading="lazy"><figcaption>Fig. 2: Ground view — Perseids radiating from the radiant (2026-08-13)</figcaption></figure><h3>Time</h3>
 <p>Date entry (BC as negative years), Today, ■ toggles stop ⇄ real time (×1),
 arrows step ×2 → ×10 → … → ×10000, stepless slider.</p>
 

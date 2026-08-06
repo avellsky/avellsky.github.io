@@ -12,11 +12,13 @@ ships with **5,000 dust grains from five perihelion returns (1479, 1610,
 
 ## Screen layout
 
+![Screen layout](img/fig_overview.jpg)
+
 - Centre: 3D view (drag = rotate, pinch/wheel = zoom)
 - Top right: EN/JP language toggle, ⓘ panel toggle
 - Right panel: dataset, trail legend, display settings, viewpoints,
   particle settings
-- Bottom bar: date/time (UT), return counter, date entry, Today,
+- Bottom bar: date/time (UT), date entry, Today, viewpoint menu,
   time controls
 
 Panels can be dragged anywhere by their grips; the side panel's height is
@@ -54,6 +56,8 @@ names ON automatically; leaving it switches the radiant back OFF.
 
 ## The ground-view meteor shower
 
+![Meteor shower](img/fig_ground.jpg)
+
 From the ground you watch meteors radiate from the shower radiant
 (displayed at a fixed ZHR of 5,000), **only within the shower's activity
 period** (Perseids: Jul 17 – Aug 24).
@@ -71,7 +75,6 @@ period** (Perseids: Jul 17 – Aug 24).
 - **■** toggles stop ⇄ real-time (×1)
 - **< / >** step ×2 → ×10 → ×100 → ×500 → ×1000 → ×5000 → ×10000
 - Slider: stepless speed, centre = stopped
-- Return counter: elapsed comet returns relative to the dataset epoch
 
 ## Particles
 
