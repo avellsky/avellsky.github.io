@@ -2,8 +2,9 @@
 
 Meteorium visualises the "dust trails" — ribbons of comet dust that produce
 meteor showers — in 3D, based on real orbital dynamics. The free edition
-ships with **5,000 dust grains from five perihelion returns (1479, 1610,
-1737, 1862, 1992) of comet 109P/Swift-Tuttle**, the parent of the Perseids.
+ships with **60,000 dust grains from eight perihelion returns (1079, 1209,
+1344, 1478, 1609, 1736, 1862, 1992) of comet 109P/Swift-Tuttle**, the parent
+of the Perseids.
 
 - Orbits integrated with REBOUND/ReboundX (planetary gravity + solar
   radiation pressure)
@@ -89,9 +90,33 @@ Rendered fraction 10/25/50/100% and size L/M/S.
 All 13 major showers + IAU MDC established showers, theory computation
 with adjustable parameters and non-gravitational forces, observed-orbit
 datasets from the IAU MDC archives (CAMS / SonotaCo / EDMOND / GMN /
-OTH), ZHR outburst forecasting with trail cross-sections, JPL DE
-ephemerides, video recording, PNG/PDF export, dataset export, and
-persistent settings.
+OTH), ZHR outburst forecasting (NASA MEM annual model and the trail
+model shown separately, with per-trail colour-coded contributions), dust
+trail cross-sections with particle scatter and 1-sigma / 2-sigma error
+ellipses, an ecliptic-plane X-Y view in its own window (zoom, drag, and
+a toggle for the comet's return position), JPL DE ephemerides, video
+recording, PNG/PDF export, dataset export, and persistent settings.
+
+## About the forecast model
+
+Trail forecasts integrate the dust released at each perihelion return of
+the parent comet forward to the present with REBOUND/ReboundX (planetary
+perturbations, radiation pressure, Poynting-Robertson drag), then
+evaluate the encounter at the trail's ecliptic node.
+
+- **Ejection**: Crifo & Rodionov (1997) gas-drag terminal-speed law,
+  sizes drawn directly from dN proportional to a^-u, radiation-pressure
+  parameter beta = 5.74e-4/(rho a)
+- **Parent position**: dust ejection sites are anchored to the JPL
+  Horizons ephemeris, which uses an orbit solution fitted to each
+  historical apparition. A self-consistent back-integration of 55P
+  instead drifts 0.08-0.15 au over 130 yr and more than 1 au before
+  1700, which biases every trail generated from it.
+- **Annual background**: measured activity profiles from NASA MEO
+  (Moorhead et al. 2019)
+- **Confidence class**: each forecast carries a band - A (0.5-2.0x),
+  B (0.29-3.5x) or C (0.1-10x) - set per shower from how well the model
+  reproduces that shower's documented past encounters.
 
 Shower parameters follow the IMO Meteor Shower Calendar.
 
