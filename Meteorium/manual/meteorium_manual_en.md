@@ -10,6 +10,7 @@ of the Perseids.
   radiation pressure)
 - Sky background: NASA Deep Star Maps 2020 (8K)
 - Fully offline; no data collection, no ads
+- Bundled **Perseid shower forecasts (display)** for 2026-2040, evaluated with the same model as Meteorium Pro and shipped precomputed (the free edition contains no forecast engine)
 
 ## Screen layout
 
