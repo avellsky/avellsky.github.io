@@ -48,3 +48,16 @@ Astrarium © 2026 Avellsky. All rights reserved.
 | `Meteorium/privacy-policy.ja.html` | [/Meteorium/privacy-policy.ja.html](https://avellsky.github.io/Meteorium/privacy-policy.ja.html) | プライバシーポリシー（日本語） |
 | `Meteorium/privacy-policy.en.html` | [/Meteorium/privacy-policy.en.html](https://avellsky.github.io/Meteorium/privacy-policy.en.html) | プライバシーポリシー（英語） |
 | `Meteorium/icon.png` | — | アプリのアイコン |
+
+## Cometarium
+
+| 場所 | 公開先 | 内容 |
+|---|---|---|
+| `Cometarium/index.html` | [/Cometarium/](https://avellsky.github.io/Cometarium/) | Cometarium のサポートページ。マニュアル、プライバシーポリシー、連絡先 |
+| `Cometarium/manual/` | [/Cometarium/manual/](https://avellsky.github.io/Cometarium/manual/) | ユーザーマニュアル（日本語・英語、HTML / Markdown、図入り） |
+| `Cometarium/privacy-policy.ja.html` | [/Cometarium/privacy-policy.ja.html](https://avellsky.github.io/Cometarium/privacy-policy.ja.html) | プライバシーポリシー（日本語） |
+| `Cometarium/privacy-policy.en.html` | [/Cometarium/privacy-policy.en.html](https://avellsky.github.io/Cometarium/privacy-policy.en.html) | プライバシーポリシー（英語） |
+| `Cometarium/icon.png` | — | アプリのアイコン（無料版） |
+
+マニュアルの図はアプリの実画面です。番号入りの解説図は元のスクリーンショットに
+丸数字を重ねて作っており、画面を作り直したときは図も撮り直します。

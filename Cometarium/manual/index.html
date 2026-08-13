@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../icon.png">
+<link rel="apple-touch-icon" href="../icon.png">
+<title>Cometarium — ユーザーマニュアル / User Manual</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0d0d0d; color: #c3c2b7;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.75; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 28px 20px 60px; }
+  h1 { color: #fff; font-size: 26px; margin: 8px 0 2px; }
+  h2 { color: #fff; font-size: 19px; margin-top: 34px;
+    border-bottom: 1px solid rgba(255,255,255,.14); padding-bottom: 6px; }
+  h3 { color: #e8e7df; font-size: 15px; margin-top: 22px; }
+  .sub { color: #898781; margin-bottom: 20px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid rgba(255,255,255,.14); padding: 7px 10px;
+    text-align: left; vertical-align: top; }
+  th { color: #fff; background: rgba(255,255,255,.05); white-space: nowrap; }
+  code, b.k { color: #86b6ef; font-weight: 600; }
+  ul { padding-left: 22px; }
+  li { margin: 3px 0; }
+  .nav { display: flex; gap: 10px; flex-wrap: wrap; margin: 14px 0 6px; }
+  .nav a { color: #86b6ef; text-decoration: none; font-size: 13px;
+    border: 1px solid rgba(57,135,229,.4); border-radius: 999px;
+    padding: 4px 14px; }
+  .note { background: rgba(57,135,229,.10); border: 1px solid rgba(57,135,229,.35);
+    border-radius: 10px; padding: 10px 14px; font-size: 14px; }
+  footer { margin-top: 48px; color: #898781; font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,.14); padding-top: 14px; }
+  figure { margin: 18px 0; }
+  figure img { width: 100%; height: auto; display: block; border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.14); }
+  figcaption { font-size: 12px; color: #898781; margin-top: 6px;
+    text-align: center; }
+  .two { display: flex; gap: 14px; flex-wrap: wrap; }
+  .two figure { flex: 1 1 240px; margin: 8px 0; }
+</style>
+</head>
+<body><div class="wrap">
+
+<h1>Cometarium</h1>
+<div class="sub">彗星ビューア — ユーザーマニュアル(無料版 1.0)/
+User Manual (Free Edition 1.0)</div>
+<div class="nav">
+  <a href="#ja">日本語</a><a href="#en">English</a><a href="../">サポート / Support</a><a href="#privacy">プライバシー / Privacy</a>
+</div>
+
+<h2 id="ja">日本語マニュアル</h2>
+<p>Cometarium は、彗星がいつ・どこに見え、どんな尾を引くのかを描く天文アプリです。
+背景の星は実際の星表(Bright Star Catalogue、6.5 等まで)、彗星の位置は NASA/JPL の
+軌道解を出発点にした N 体積分の結果で、尾は太陽光の輻射圧と太陽風のモデルから
+計算しています。<b>通信は一切行いません</b>。必要なデータはすべてアプリに入っています。</p>
+<p>無料版に収録されているのは <b>10P/Tempel 2</b> です。2026年8月5日に近日点を通過し、
+地球に 0.4 天文単位まで近づく、この回帰でよく見える周期彗星です。</p>
+
+<h3>画面の見かた</h3>
+<figure><img src="img/fig_overview.jpg" alt="図1: 画面の構成(Mac)" loading="lazy"><figcaption>図1: 画面の構成 — 番号は下の表に対応(Mac 版)</figcaption></figure>
+<table>
+<tr><th>番号</th><th>名称</th><th>内容</th></tr>
+<tr><td>①</td><td>アプリ名と対象彗星</td><td>いま表示している彗星。無料版は 10P/Tempel 2</td></tr>
+<tr><td>②</td><td>日付スライダ</td><td>収録期間内の任意の日時へ移動。起動時は「今日」</td></tr>
+<tr><td>③</td><td>表示切替</td><td>リセット・縮小 −・拡大 ＋ と、6つの表示レイヤー</td></tr>
+<tr><td>④</td><td>天球経路</td><td>収録期間の彗星の通り道(水色)</td></tr>
+<tr><td>⑤</td><td>日付目盛</td><td>経路上の日付。大きい丸が月初、小さい丸が中間の日付</td></tr>
+<tr><td>⑥</td><td>近日点</td><td>太陽に最も近づく点と、その日付</td></tr>
+<tr><td>⑦</td><td>バースト</td><td>突発的な増光(アウトバースト)が観測された位置・日付・増光量</td></tr>
+<tr><td>⑧</td><td>現在位置</td><td>②で指定した日時の彗星。ダスト尾とプラズマ尾つき</td></tr>
+<tr><td>⑨</td><td>現在値</td><td>その日時の位置・距離・明るさの数値</td></tr>
+</table>
+<p>背景の星の<b>色は B−V 色指数</b>(青白い星ほど高温、オレンジの星ほど低温)、
+<b>大きさは実視等級</b>に対応します。星座線と星座名も表示できます。</p>
+
+<h3>操作</h3>
+<table>
+<tr><th>したいこと</th><th>Mac</th><th>iPhone / iPad</th></tr>
+<tr><td>日付を変える</td><td>スライダをドラッグ</td><td>スライダをドラッグ</td></tr>
+<tr><td>今日に戻す</td><td>「今日」ボタン</td><td>「今日」ボタン</td></tr>
+<tr><td>拡大・縮小</td><td>＋ / − ボタン</td><td>＋ / − ボタン、または2本指のピンチ</td></tr>
+<tr><td>視野を動かす</td><td>図の上をドラッグ</td><td>図の上を1本指でドラッグ</td></tr>
+<tr><td>全体表示に戻す</td><td>「リセット」</td><td>「リセット」</td></tr>
+<tr><td>ラベルを動かす</td><td>ラベルをつまんでドラッグ</td><td>ラベルを指でドラッグ</td></tr>
+</table>
+<div class="note">拡大・縮小は<b>彗星を中心に</b>行われるので、倍率を上げても彗星が画面から
+逃げません。最も縮小した状態で赤経24時間ぶん(全天)が収まり、それ以上は広がりません。</div>
+<p><b>ラベルはドラッグで動かせます。</b>「彗星名」「近日点」「バースト」のラベルは、
+近日点の前後など重なりやすい時期があります。読みにくいときはつまんで空いた場所へ
+移してください。「リセット」で元の位置に戻ります。</p>
+<h3>表示レイヤー</h3>
+<table>
+<tr><th>ボタン</th><th>表示されるもの</th></tr>
+<tr><td>星名</td><td>明るい星のバイエル符号(例: α CMa)</td></tr>
+<tr><td>星座線</td><td>星座の結び線</td></tr>
+<tr><td>星座名</td><td>星座の名前。狭い場所では自動で間引かれます</td></tr>
+<tr><td>彗星名</td><td>現在位置の横に出る彗星名</td></tr>
+<tr><td>近日点</td><td>近日点の印と日付</td></tr>
+<tr><td>バースト</td><td>アウトバーストの印と日付・増光量</td></tr>
+</table>
+
+<h3>図の読み方</h3>
+<p>横軸は赤経、縦軸は赤緯(いずれも J2000.0)です。星図の慣習に従い、
+<b>赤経は右へ行くほど小さく</b>なります(西が右)。南の空を見上げたときと同じ向きです。</p>
+<p><b>現在位置には尾が描かれます。</b>オレンジ色の扇はダスト尾(同じ大きさの塵が描く
+曲線＝シンダインの束)、水色の線はプラズマ尾です。塵は太陽光の輻射圧で押し流されて
+曲がり、プラズマは太陽風にほぼ沿ってまっすぐ伸びます。縮小表示では点にしか見えないので、
+拡大してご覧ください。</p>
+
+<h3>拡大すると何が変わるか</h3>
+<figure><img src="img/fig_zoom.jpg" alt="図2: 拡大した状態" loading="lazy"><figcaption>図2: 同じ彗星を拡大 — 日付目盛が 8/16・8/31・9/15・9/30 と自動で細かくなる</figcaption></figure>
+<p>日付目盛の間隔は「彗星が<b>画面上で</b>どれだけ速く動くか」で決まります。そのため
+拡大すると、月初だけだった目盛が半月ごと・10日ごと…と自動的に細分されます。
+暗い星も増え、星名も多く出ます。ラベルが重なる場所では経路の反対側へ逃がし、
+そこも詰まっていれば点だけを残します。</p>
+
+<h3>現在値の意味</h3>
+<table>
+<tr><th>項目</th><th>意味</th></tr>
+<tr><td>赤経・赤緯 (J2000)</td><td>天球上の位置(地心視位置)</td></tr>
+<tr><td>日心距離 r</td><td>太陽から彗星までの距離(au。1 au ≒ 1億4960万 km)</td></tr>
+<tr><td>地心距離 Δ</td><td>地球から彗星までの距離(au)</td></tr>
+<tr><td>太陽離角</td><td>地球から見た太陽と彗星の離れかた(0°=太陽と同方向、180°=真夜中に南中)</td></tr>
+<tr><td>位相角</td><td>彗星から見た太陽と地球のなす角。小さいほど「満月」の位置関係</td></tr>
+<tr><td>予測等級 m₁</td><td>全等級の予測値。COBS の観測に当てはめた光度式による</td></tr>
+<tr><td>日心位置(黄道)</td><td>太陽を原点とする黄道座標の x, y, z(au)</td></tr>
+</table>
+<p>距離と位置は<b>光行時間を補正済み</b>です。表示されているのは「いまその光が地球に
+届いている瞬間の彗星」の値です。</p>
+
+<h3>iPhone・iPad での表示</h3>
+<div class="two">
+<figure><img src="img/fig_iphone.jpg" alt="図3: iPhone" loading="lazy"><figcaption>図3: iPhone</figcaption></figure>
+<figure><img src="img/fig_ipad.jpg" alt="図4: iPad" loading="lazy"><figcaption>図4: iPad</figcaption></figure>
+</div>
+<p>描かれる内容はどの機種でも同じです。iPad では横幅が広いぶん星座名や星名が多く出ます。
+表示切替のボタン列は、画面が狭いときは左右にスクロールします。</p>
+
+<h3>収録範囲と今後</h3>
+<table>
+<tr><th>項目</th><th>Cometarium(無料)</th><th>Cometarium Pro</th></tr>
+<tr><td>対象彗星</td><td>10P/Tempel 2 のみ</td><td>収録彗星すべて</td></tr>
+<tr><td>天球経路・現在値</td><td>○</td><td>○</td></tr>
+<tr><td>光度曲線・尾の形状・観測可能時間帯・太陽系軌道 3D</td><td>○</td><td>○</td></tr>
+<tr><td>太陽系 3D の比較彗星</td><td>220P のみ</td><td>自由に追加</td></tr>
+<tr><td>写真の重ね合わせ・測光・WCS 解析</td><td>—</td><td>○</td></tr>
+<tr><td>ボートルの生存限界図</td><td>—</td><td>○</td></tr>
+</table>
+<div class="note">1.0 では天球経路と現在値を搭載しています。ほかの画面はアップデートで
+順次追加し、本ページも合わせて更新します。</div>
+
+<h3>計算とデータの出どころ</h3>
+<table>
+<tr><th>内容</th><th>出どころ</th></tr>
+<tr><td>軌道と天体暦</td><td>NASA/JPL Horizons・SBDB・NAIF SPICE(DE440 / sb441)</td></tr>
+<tr><td>軌道の積分</td><td>ASSIST(REBOUND 系)による N 体積分。惑星と主要小惑星の摂動、非重力加速度を含む</td></tr>
+<tr><td>光度と増光</td><td>COBS(Comet Observation Database)の観測に基づく光度式の当てはめ</td></tr>
+<tr><td>星表</td><td>Bright Star Catalogue(V ≤ 6.5)</td></tr>
+<tr><td>尾の形状</td><td>Finson–Probstein のシンダイン/シンクロン、Burns–Lamy–Soter の β、太陽風による吹き流しモデル</td></tr>
+</table>
+<p>Credit: NASA/JPL-Caltech. Comet magnitude data courtesy of
+<a style="color:#86b6ef" href="https://cobs.si">COBS Comet Observation Database</a>.</p>
+
+<h3>よくある質問</h3>
+<p><b>Q. オフラインでも使えますか。</b> はい。位置計算も星図もアプリ内で完結し、通信は行いません。</p>
+<p><b>Q. 表示できる期間は。</b> 彗星ごとに、その回帰の前後をカバーする期間が収録されています。スライダの左端・右端がその期間です。</p>
+<p><b>Q. どのくらい正確ですか。</b> 位置は JPL の軌道解を出発点にした N 体積分で、実測とほぼ一致します。ただし彗星の<b>明るさ</b>は本質的に予測が難しく、実際の観測とずれることがあります。</p>
+<p><b>Q. ラベルが重なって読めません。</b> ラベルはドラッグで移動できます。「リセット」で元に戻ります。</p>
+<p><b>Q. 彗星を増やせますか。</b> 無料版は 10P/Tempel 2 専用です。ほかの彗星は Cometarium Pro でご利用ください。</p>
+
+<h2 id="en">English Manual</h2>
+<p>Cometarium shows where a comet is, when it can be seen and how its tails lie on
+the sky. The background stars come from the Bright Star Catalogue (to V = 6.5),
+the comet's position from an N-body integration started from the NASA/JPL orbit
+solution, and the tails from radiation-pressure and solar-wind models.
+<b>The app never uses the network</b>: everything it needs is bundled.
+The free edition covers <b>10P/Tempel 2</b>, which passed perihelion on
+5 August 2026 and comes within 0.4 astronomical units of Earth.</p>
+
+<h3>The screen</h3>
+<p>See figure 1 above. ① the comet on show, ② the date slider (opens at today),
+③ reset / zoom out / zoom in and six display layers, ④ the comet's path across
+the sky, ⑤ dates along the path, ⑥ perihelion, ⑦ an observed outburst,
+⑧ the comet at the chosen instant with its dust and plasma tails, ⑨ the numbers
+for that instant.</p>
+<p>Star colour follows the B−V colour index (blue-white is hot, orange is cool)
+and star size follows visual magnitude.</p>
+
+<h3>Controls</h3>
+<ul>
+<li>Drag the slider to change the date; <b>今日</b> returns to today.</li>
+<li><b>＋</b> / <b>−</b> zoom about the comet, so it never escapes the frame;
+on iPhone and iPad you can also pinch. Zoomed all the way out, the chart holds
+the full 24 hours of right ascension and goes no wider.</li>
+<li>Drag the chart to move the field; <b>リセット</b> fits the whole path again.</li>
+<li><b>Drag a label to move it.</b> Near perihelion the comet name, the perihelion
+caption and an outburst caption can land on each other; pull them apart.</li>
+</ul>
+
+<h3>Reading the chart</h3>
+<p>Right ascension runs along the bottom and <b>increases to the left</b>, as the
+sky does when you face south; declination runs up the side. Both are J2000.0.
+The orange fan at the comet is the dust tail (a family of syndynes — the curves
+traced by grains of one size), and the cyan line is the plasma tail. Zoom in to
+see them; at full-path scale they are smaller than the marker.</p>
+<p>The date ticks subdivide themselves: their spacing follows how fast the comet
+moves <b>on screen</b>, so zooming in turns months into halves of months and then
+into ten-day steps (figure 2).</p>
+
+<h3>The numbers</h3>
+<table>
+<tr><th>Field</th><th>Meaning</th></tr>
+<tr><td>赤経 / 赤緯 (J2000)</td><td>Right ascension and declination, geocentric apparent place</td></tr>
+<tr><td>日心距離 r</td><td>Sun–comet distance (au)</td></tr>
+<tr><td>地心距離 Δ</td><td>Earth–comet distance (au)</td></tr>
+<tr><td>太陽離角</td><td>Solar elongation (0° = towards the Sun, 180° = opposite it)</td></tr>
+<tr><td>位相角</td><td>Phase angle, Sun–comet–Earth</td></tr>
+<tr><td>予測等級 m₁</td><td>Predicted total magnitude, from a light curve fitted to COBS observations</td></tr>
+<tr><td>日心位置(黄道)</td><td>Heliocentric ecliptic x, y, z (au)</td></tr>
+</table>
+<p>Distances and positions are corrected for light time: they describe the comet
+at the moment the light now reaching Earth left it.</p>
+
+<h3>Free edition and Pro</h3>
+<p>The free edition follows 10P/Tempel 2 only, and in the solar-system 3D view it
+can add 220P alongside it. Cometarium Pro carries the whole catalogue, plus
+photograph overlay with aperture photometry, FITS/WCS handling and plate solving,
+and the Bortle survival chart. Version 1.0 ships the sky path and the ephemeris
+readout; the other panels arrive in updates.</p>
+
+<h3>Sources</h3>
+<p>Orbits and ephemerides: NASA/JPL Horizons, SBDB and NAIF SPICE (DE440, sb441).
+Integration: ASSIST/REBOUND, including planetary and main-belt perturbations and
+non-gravitational acceleration. Photometry: COBS Comet Observation Database.
+Stars: Bright Star Catalogue. Tails: Finson–Probstein syndynes and synchrones,
+Burns–Lamy–Soter β, and a solar-wind windsock model.
+Credit: NASA/JPL-Caltech; comet magnitude data courtesy of COBS.</p>
+
+<h2 id="privacy">プライバシー / Privacy</h2>
+<p>本アプリはいかなるデータも収集・送信しません。 /
+The app collects and transmits no data whatsoever.
+<a style="color:#86b6ef" href="../privacy-policy.ja.html">プライバシーポリシー</a> /
+<a style="color:#86b6ef" href="../privacy-policy.en.html">Privacy Policy</a></p>
+
+<footer>© Cometarium, Avellsky — お問い合わせ / Contact: avellsky@gmail.com</footer>
+</div></body></html>
