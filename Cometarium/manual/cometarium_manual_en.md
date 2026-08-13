@@ -117,8 +117,9 @@ sideways.
 | Photograph overlay, photometry, FITS/WCS, plate solving | — | yes |
 | Bortle survival chart | — | yes |
 
-Version 1.0 ships the sky path and the ephemeris readout; the other panels
-arrive in updates.
+Version 1.0 ships all six panels: the sky path, the light curve, the tail
+shape, observability for a chosen prefecture, the solar-system 3D view, and
+the ephemeris readout.
 
 ## 8. Sources
 
