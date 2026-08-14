@@ -1,3 +1,5 @@
+<img src="../logo.svg" alt="Cometarium" width="72" height="72">
+
 # Cometarium User Manual (Free Edition 1.0)
 
 Cometarium shows where a comet is, when it can be seen and how its tails lie on

@@ -1,3 +1,5 @@
+<img src="../logo.svg" alt="Cometarium" width="72" height="72">
+
 # Cometarium ユーザーマニュアル(無料版 1.0)
 
 Cometarium は、彗星がいつ・どこに見え、どんな尾を引くのかを描く天文アプリです
