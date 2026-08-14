@@ -9,11 +9,13 @@ solution, and the tails from radiation-pressure and solar-wind models.
 - **Fully offline.** No network, no data collection, no advertising
 - Requires iOS/iPadOS 17 or later, macOS 14 or later
 
+![The opening](img/fig_opening.jpg)
+
 ---
 
 ## 1. The bar at the top
 
-![Sky](img/fig_sky.jpg)
+![Sky](img/fig_sky_en.jpg)
 
 The app icon (a link to the author), the comet menu, **EN** for the language and
 the **red dot** for night mode. Then the date and time — type into them if you
@@ -34,7 +36,7 @@ magnitude. The comet carries the tail set on the Tail panel.
 
 ## 3. Horizon
 
-![Horizon](img/fig_horizon.jpg)
+![Horizon](img/fig_horizon_en.jpg)
 
 Your own sky, centred on the comet: the sky takes its colour from the Sun's
 altitude, with the ground, the compass and an altitude scale. Azimuth increases
@@ -44,14 +46,14 @@ seen waiting. When the comet is under the ground the view stops at the horizon.
 
 ## 4. Night
 
-![Night](img/fig_night.jpg)
+![Night](img/fig_night_en.jpg)
 
 One night of altitudes for the comet, the Sun and the Moon, with rise, transit
 and set, the Moon's age and phase, lunar elongation and sky brightness.
 
 ## 5. Orbits
 
-![Orbits](img/fig_orbits.jpg)
+![Orbits](img/fig_orbits_en.jpg)
 
 The Sun, the eight planets and the comet in three dimensions. Drag to turn the
 view; centre it on the Sun, the Earth or the comet; add other comets alongside
@@ -59,7 +61,7 @@ view; centre it on the Sun, the Earth or the comet; add other comets alongside
 
 ## 6. Light
 
-![Light](img/fig_light.jpg)
+![Light](img/fig_light_en.jpg)
 
 COBS visual and CCD observations under the fitted light curve and its ±3σ band,
 with the fit's own numbers: `m₁ = H₀ + 5 log Δ + 2.5 n log r`, H₀ and n either
@@ -67,7 +69,7 @@ side of perihelion, the number of observations and when COBS was read.
 
 ## 7. Tail
 
-![Tail](img/fig_tail.jpg)
+![Tail](img/fig_tail_en.jpg)
 
 Position angle from the nucleus, north up and east left. Choose the β grid, how
 far back emission is followed (3 to 90 days), the solar wind speed and the
@@ -76,13 +78,13 @@ and drawn on the sky and horizon panels too.
 
 ## 8. Details
 
-![Details](img/fig_now.jpg)
+![Details](img/fig_now_en.jpg)
 
 Thirty numbers for the instant on show, corrected for light time.
 
 ## 9. On iPhone
 
-![iPhone](img/fig_iphone.jpg)
+![iPhone](img/fig_iphone_en.jpg)
 
 ## 10. Free edition and Pro
 
