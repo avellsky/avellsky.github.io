@@ -58,195 +58,153 @@ User Manual (Free Edition 1.0)</div>
 <p>無料版に収録されているのは <b>10P/Tempel 2</b> です。2026年8月5日に近日点を通過し、
 地球に 0.4 天文単位まで近づく、この回帰でよく見える周期彗星です。</p>
 
-<h3>画面の見かた</h3>
-<figure><img src="img/fig_overview.jpg" alt="図1: 画面の構成(Mac)" loading="lazy"><figcaption>図1: 画面の構成 — 番号は下の表に対応(Mac 版)</figcaption></figure>
+<h3>共通の操作</h3>
+<figure><img src="img/fig_sky.jpg" alt="図1: 天球の画面(iPad)" loading="lazy"><figcaption>図1: 天球 — 上段が日時と観測地、その下がパネル切替、下が図</figcaption></figure>
 <table>
-<tr><th>番号</th><th>名称</th><th>内容</th></tr>
-<tr><td>①</td><td>アプリ名と対象彗星</td><td>いま表示している彗星。無料版は 10P/Tempel 2</td></tr>
-<tr><td>②</td><td>日付スライダ</td><td>収録期間内の任意の日時へ移動。起動時は「今日」</td></tr>
-<tr><td>③</td><td>表示切替</td><td>リセット・縮小 −・拡大 ＋ と、6つの表示レイヤー</td></tr>
-<tr><td>④</td><td>天球経路</td><td>収録期間の彗星の通り道(水色)</td></tr>
-<tr><td>⑤</td><td>日付目盛</td><td>経路上の日付。大きい丸が月初、小さい丸が中間の日付</td></tr>
-<tr><td>⑥</td><td>近日点</td><td>太陽に最も近づく点と、その日付</td></tr>
-<tr><td>⑦</td><td>バースト</td><td>突発的な増光(アウトバースト)が観測された位置・日付・増光量</td></tr>
-<tr><td>⑧</td><td>現在位置</td><td>②で指定した日時の彗星。ダスト尾とプラズマ尾つき</td></tr>
-<tr><td>⑨</td><td>現在値</td><td>その日時の位置・距離・明るさの数値</td></tr>
+<tr><th>場所</th><th>内容</th></tr>
+<tr><td>最上段</td><td>アプリのアイコン(押すと作者のページ)、対象彗星のメニュー、<b>EN</b>(日英切替)、<b>赤い丸</b>(ナイトモード)</td></tr>
+<tr><td>2段目</td><td>日付と時刻(直接入力できます)、時刻系と時差(例: JST+9)、<b>現在</b>ボタン</td></tr>
+<tr><td>3段目</td><td>観測地(都道府県/世界の都市)、<b>➤</b>(現在位置を取得)、緯度・経度(直接入力できます)</td></tr>
+<tr><td>4段目</td><td>時刻の微調整(−1h〜+1h)と <b>南中</b>(その日に彗星が最も高くなる瞬間へ)。地平・観測で表示</td></tr>
+<tr><td>スライダ</td><td>収録期間を端から端まで</td></tr>
+<tr><td>パネル切替</td><td>天球 / 地平 / 観測 / 太陽系 / 光度 / 尾 / 詳細</td></tr>
 </table>
-<p>背景の星の<b>色は B−V 色指数</b>(青白い星ほど高温、オレンジの星ほど低温)、
-<b>大きさは実視等級</b>に対応します。星座線と星座名も表示できます。</p>
+<div class="note">図はどれも指で動かせます。ドラッグで移動、ピンチで拡大縮小、
+「リセット」で元に戻ります。Mac では地平の視野を矢印キーでも動かせます。</div>
 
-<h3>操作</h3>
-<table>
-<tr><th>したいこと</th><th>Mac</th><th>iPhone / iPad</th></tr>
-<tr><td>日付を変える</td><td>スライダをドラッグ</td><td>スライダをドラッグ</td></tr>
-<tr><td>今日に戻す</td><td>「今日」ボタン</td><td>「今日」ボタン</td></tr>
-<tr><td>拡大・縮小</td><td>＋ / − ボタン</td><td>＋ / − ボタン、または2本指のピンチ</td></tr>
-<tr><td>視野を動かす</td><td>図の上をドラッグ</td><td>図の上を1本指でドラッグ</td></tr>
-<tr><td>全体表示に戻す</td><td>「リセット」</td><td>「リセット」</td></tr>
-<tr><td>ラベルを動かす</td><td>ラベルをつまんでドラッグ</td><td>ラベルを指でドラッグ</td></tr>
-</table>
-<div class="note">拡大・縮小は<b>彗星を中心に</b>行われるので、倍率を上げても彗星が画面から
-逃げません。最も縮小した状態で赤経24時間ぶん(全天)が収まり、それ以上は広がりません。</div>
-<p><b>ラベルはドラッグで動かせます。</b>「彗星名」「近日点」「バースト」のラベルは、
-近日点の前後など重なりやすい時期があります。読みにくいときはつまんで空いた場所へ
-移してください。「リセット」で元の位置に戻ります。</p>
-<h3>表示レイヤー</h3>
-<table>
-<tr><th>ボタン</th><th>表示されるもの</th></tr>
-<tr><td>星名</td><td>明るい星のバイエル符号(例: α CMa)</td></tr>
-<tr><td>星座線</td><td>星座の結び線</td></tr>
-<tr><td>星座名</td><td>星座の名前。狭い場所では自動で間引かれます</td></tr>
-<tr><td>彗星名</td><td>現在位置の横に出る彗星名</td></tr>
-<tr><td>近日点</td><td>近日点の印と日付</td></tr>
-<tr><td>バースト</td><td>アウトバーストの印と日付・増光量</td></tr>
-</table>
+<h3>天球 — 星座の中の通り道</h3>
+<p>赤道座標(J2000.0)で、収録期間の経路を紫の線で描きます。横軸の赤経は
+<b>右へ行くほど小さく</b>なります(西が右)。日付の目盛は「彗星が画面上でどれだけ速く
+動くか」で決まるので、拡大すると月初だけだった目盛が半月ごと・10日ごとと自動的に
+細分されます。星の色は B−V 色指数、大きさは実視等級です。</p>
+<p>現在位置には尾が付きます。オレンジの扇がダスト尾(同じ大きさの塵が描く曲線＝
+シンダイン)、水色がプラズマ尾で、いずれも「尾」パネルの設定がそのまま反映されます。</p>
 
-<h3>図の読み方</h3>
-<p>横軸は赤経、縦軸は赤緯(いずれも J2000.0)です。星図の慣習に従い、
-<b>赤経は右へ行くほど小さく</b>なります(西が右)。南の空を見上げたときと同じ向きです。</p>
-<p><b>現在位置には尾が描かれます。</b>オレンジ色の扇はダスト尾(同じ大きさの塵が描く
-曲線＝シンダインの束)、水色の線はプラズマ尾です。塵は太陽光の輻射圧で押し流されて
-曲がり、プラズマは太陽風にほぼ沿ってまっすぐ伸びます。縮小表示では点にしか見えないので、
-拡大してご覧ください。</p>
+<h3>地平 — 実際に空を見上げた向き</h3>
+<figure><img src="img/fig_horizon.jpg" alt="図2: 地平" loading="lazy"><figcaption>図2: 地平 — 彗星を中心に、地平線・方位・高度目盛つき</figcaption></figure>
+<p>観測地の空を、彗星を中心に心射図法で描きます。空の色は<b>太陽高度で変わり</b>
+(昼の青 → 薄明 → 夜)、地平線と地面、方位(東西南北と度数)、高度の目盛が入ります。
+方位は<b>右へ行くほど増えます</b>(北を向けば東が右、東を向けば南が右)。</p>
+<ul>
+<li>目盛は視野に追従します。視野60°なら高度10°ごと(細目盛2°)、視野10°なら1°ごと</li>
+<li>地平線下 20° までの星・太陽・月も薄く描くので、これから昇ってくる星が分かります</li>
+<li>彗星が沈んでいるときは視点が地平線で止まり、「地平線の下」と表示されます</li>
+<li>彗星名はドラッグで移動できます</li>
+</ul>
 
-<h3>拡大すると何が変わるか</h3>
-<figure><img src="img/fig_zoom.jpg" alt="図2: 拡大した状態" loading="lazy"><figcaption>図2: 同じ彗星を拡大 — 日付目盛が 8/16・8/31・9/15・9/30 と自動で細かくなる</figcaption></figure>
-<p>日付目盛の間隔は「彗星が<b>画面上で</b>どれだけ速く動くか」で決まります。そのため
-拡大すると、月初だけだった目盛が半月ごと・10日ごと…と自動的に細分されます。
-暗い星も増え、星名も多く出ます。ラベルが重なる場所では経路の反対側へ逃がし、
-そこも詰まっていれば点だけを残します。</p>
+<h3>観測 — 一晩の高度と空の暗さ</h3>
+<figure><img src="img/fig_night.jpg" alt="図3: 観測" loading="lazy"><figcaption>図3: 観測 — 実線が彗星、細線が太陽、破線が月。影は薄明と昼</figcaption></figure>
+<p>観測地の一晩について、彗星・太陽・月の高度を描きます。図の下に、日の出/入り、
+月の出/入り、彗星の出・南中・没、最高高度、月齢と照度、月との離角、闇夜での最高高度、
+空の明るさ(Krisciunas &amp; Schaefer 1991 の式)が出ます。</p>
 
-<h3>現在値の意味</h3>
-<table>
-<tr><th>項目</th><th>意味</th></tr>
-<tr><td>赤経・赤緯 (J2000)</td><td>天球上の位置(地心視位置)</td></tr>
-<tr><td>日心距離 r</td><td>太陽から彗星までの距離(au。1 au ≒ 1億4960万 km)</td></tr>
-<tr><td>地心距離 Δ</td><td>地球から彗星までの距離(au)</td></tr>
-<tr><td>太陽離角</td><td>地球から見た太陽と彗星の離れかた(0°=太陽と同方向、180°=真夜中に南中)</td></tr>
-<tr><td>位相角</td><td>彗星から見た太陽と地球のなす角。小さいほど「満月」の位置関係</td></tr>
-<tr><td>予測等級 m₁</td><td>全等級の予測値。COBS の観測に当てはめた光度式による</td></tr>
-<tr><td>日心位置(黄道)</td><td>太陽を原点とする黄道座標の x, y, z(au)</td></tr>
-</table>
-<p>距離と位置は<b>光行時間を補正済み</b>です。表示されているのは「いまその光が地球に
-届いている瞬間の彗星」の値です。</p>
+<h3>太陽系 — 軌道を上から、横から</h3>
+<figure><img src="img/fig_orbits.jpg" alt="図4: 太陽系" loading="lazy"><figcaption>図4: 太陽系 — 太陽・8惑星・彗星の軌道</figcaption></figure>
+<p>ドラッグで視点が回り、太陽中心・地球中心・彗星中心を切り替えられます。彗星の軌道は
+全体を細く、収録期間を太く描きます。軌道面の塗り、春分点、近日点、バーストの表示は
+ボタンで切り替えます。「他の彗星」で比較したい彗星を重ねられます(無料版は 220P のみ、
+ほかは Pro)。</p>
 
-<h3>iPhone・iPad での表示</h3>
-<div class="two">
-<figure><img src="img/fig_iphone.jpg" alt="図3: iPhone" loading="lazy"><figcaption>図3: iPhone</figcaption></figure>
-<figure><img src="img/fig_ipad.jpg" alt="図4: iPad" loading="lazy"><figcaption>図4: iPad</figcaption></figure>
-</div>
-<p>描かれる内容はどの機種でも同じです。iPad では横幅が広いぶん星座名や星名が多く出ます。
-表示切替のボタン列は、画面が狭いときは左右にスクロールします。</p>
+<h3>光度 — 明るさの実測と予測</h3>
+<figure><img src="img/fig_light.jpg" alt="図5: 光度" loading="lazy"><figcaption>図5: 光度 — COBS の観測と、当てはめた光度式(±3σ)</figcaption></figure>
+<p>COBS の眼視(灰)と CCD(緑)の観測に、当てはめた光度式と ±3σ 帯を重ねます。図の下に
+現在の予測等級 m₁、式 <code>m₁ = H₀ + 5 log Δ + 2.5 n log r</code>、近日点前後それぞれの
+H₀ と n、観測数、COBS を読んだ日時が出ます。縦軸の刻みは等級の幅に合わせて自動で
+細かくなります。</p>
 
-<h3>6つの画面</h3>
-<table>
-<tr><th>画面</th><th>内容</th></tr>
-<tr><td>天球経路</td><td>恒星・星座の中を通る彗星の道すじ。日付目盛・近日点・バースト・現在位置と尾</td></tr>
-<tr><td>光度曲線</td><td>COBS の眼視/CCD 観測と、当てはめた光度式(±3σ 帯)、アウトバーストの期間</td></tr>
-<tr><td>尾の形状</td><td>核を中心にした位置角図。シンダイン(β)・シンクロン(放出後の日数)・プラズマ尾・軌道・軌道面</td></tr>
-<tr><td>観測可能時間帯</td><td>都道府県を選んで一晩の高度変化。太陽・月・薄明、出没と南中、月齢と離角、空の明るさ</td></tr>
-<tr><td>太陽系軌道 3D</td><td>太陽・8惑星・彗星の軌道を任意の視点から。近日点・バースト・軌道面・春分点</td></tr>
-<tr><td>現在値</td><td>指定時刻の位置・距離・離角・位相角・予測等級・日心位置</td></tr>
-</table>
+<h3>尾 — ダストとプラズマの形</h3>
+<figure><img src="img/fig_tail.jpg" alt="図6: 尾" loading="lazy"><figcaption>図6: 尾 — 核を中心にした位置角図。シンダイン・シンクロン・プラズマ尾・軌道・軌道面</figcaption></figure>
+<p>核を中心に、方位環(北が上、東が左)で尾の形を描きます。<b>β</b>(輻射圧と重力の比＝
+粒径)の粗さ、<b>放出時刻</b>(3〜90日前)、<b>太陽風速度 V_sw</b>、<b>尾長</b>を選ぶと、
+その場で計算し直します。ここでの設定は天球と地平の尾にもそのまま反映されます。</p>
 
-<h3>収録範囲と今後</h3>
+<h3>詳細 — その瞬間の数値</h3>
+<figure><img src="img/fig_now.jpg" alt="図7: 詳細" loading="lazy"><figcaption>図7: 詳細 — 位置・距離・軌道要素・光度式まで30項目</figcaption></figure>
+<p>日時(UT/JST/ユリウス日)、赤経赤緯、日心距離 r、地心距離 Δ(au と km)、太陽離角、位相角、
+予測等級 m₁(±3σ)、反太陽方向の位置角、日心位置、月との離角と月齢、太陽の位置、軌道6要素、
+軌道長半径・公転周期・遠日点、光度式、COBS の観測数と取得日時、バーストの日付、収録期間。
+距離と位置は<b>光行時間を補正済み</b>です。</p>
+
+<h3>iPhone での表示</h3>
+<figure><img src="img/fig_iphone.jpg" alt="図8: iPhone" loading="lazy" style="max-width:340px;margin:0 auto"><figcaption>図8: iPhone — 内容は同じ、行が折り返します</figcaption></figure>
+
+<h3>無料版と Pro 版</h3>
 <table>
 <tr><th>項目</th><th>Cometarium(無料)</th><th>Cometarium Pro</th></tr>
 <tr><td>対象彗星</td><td>10P/Tempel 2 のみ</td><td>収録彗星すべて</td></tr>
-<tr><td>天球経路・現在値</td><td>○</td><td>○</td></tr>
-<tr><td>光度曲線・尾の形状・観測可能時間帯・太陽系軌道 3D</td><td>○</td><td>○</td></tr>
-<tr><td>太陽系 3D の比較彗星</td><td>220P のみ</td><td>自由に追加</td></tr>
-<tr><td>写真の重ね合わせ・測光・WCS 解析</td><td>—</td><td>○</td></tr>
+<tr><td>天球・地平・観測・太陽系・光度・尾・詳細</td><td>○</td><td>○</td></tr>
+<tr><td>太陽系の比較彗星</td><td>220P のみ</td><td>自由に追加</td></tr>
+<tr><td>写真の位置測定・測光・尾の解析</td><td>—</td><td>○</td></tr>
+<tr><td>最新データの取得と光度曲線の再計算</td><td>—</td><td>○</td></tr>
 <tr><td>ボートルの生存限界図</td><td>—</td><td>○</td></tr>
 </table>
-<div class="note">1.0 は6つの画面をすべて搭載しています —— 天球経路・光度曲線・
-尾の形状・観測可能時間帯・太陽系軌道 3D・現在値。上の表の「—」は Pro 版だけの機能です。</div>
 
 <h3>計算とデータの出どころ</h3>
 <table>
 <tr><th>内容</th><th>出どころ</th></tr>
 <tr><td>軌道と天体暦</td><td>NASA/JPL Horizons・SBDB・NAIF SPICE(DE440 / sb441)</td></tr>
-<tr><td>軌道の積分</td><td>ASSIST(REBOUND 系)による N 体積分。惑星と主要小惑星の摂動、非重力加速度を含む</td></tr>
+<tr><td>軌道の積分</td><td>ASSIST(REBOUND 系)。惑星と主要小惑星の摂動、非重力加速度を含む</td></tr>
 <tr><td>光度と増光</td><td>COBS(Comet Observation Database)の観測に基づく光度式の当てはめ</td></tr>
-<tr><td>星表</td><td>Bright Star Catalogue(V ≤ 6.5)</td></tr>
-<tr><td>尾の形状</td><td>Finson–Probstein のシンダイン/シンクロン、Burns–Lamy–Soter の β、太陽風による吹き流しモデル</td></tr>
+<tr><td>星表・星座</td><td>Bright Star Catalogue(V ≤ 6.5)、d3-celestial の星座線</td></tr>
+<tr><td>太陽・月・惑星</td><td>Meeus『Astronomical Algorithms』と Standish の近似要素(アプリ内で計算)</td></tr>
+<tr><td>尾の形状</td><td>Finson–Probstein のシンダイン/シンクロン、Burns–Lamy–Soter の β、太陽風による吹き流し</td></tr>
+<tr><td>空の明るさ</td><td>Krisciunas &amp; Schaefer 1991 (PASP 103, 1033)</td></tr>
 </table>
 <p>Credit: NASA/JPL-Caltech. Comet magnitude data courtesy of
 <a style="color:#86b6ef" href="https://cobs.si">COBS Comet Observation Database</a>.</p>
 
 <h3>よくある質問</h3>
 <p><b>Q. オフラインでも使えますか。</b> はい。位置計算も星図もアプリ内で完結し、通信は行いません。</p>
-<p><b>Q. 表示できる期間は。</b> 彗星ごとに、その回帰の前後をカバーする期間が収録されています。スライダの左端・右端がその期間です。</p>
-<p><b>Q. どのくらい正確ですか。</b> 位置は JPL の軌道解を出発点にした N 体積分で、実測とほぼ一致します。ただし彗星の<b>明るさ</b>は本質的に予測が難しく、実際の観測とずれることがあります。</p>
-<p><b>Q. ラベルが重なって読めません。</b> ラベルはドラッグで移動できます。「リセット」で元に戻ります。</p>
+<p><b>Q. 位置情報は何に使いますか。</b> 観測地の緯度経度を入れるためだけです。端末の外には出しません。</p>
+<p><b>Q. ナイトモードとは。</b> 画面全体を赤くして、暗順応を保ったまま読めるようにする表示です。</p>
+<p><b>Q. どのくらい正確ですか。</b> 位置は JPL の軌道解を出発点にした N 体積分で、実測とほぼ一致します。彗星の<b>明るさ</b>は本質的に予測が難しく、実際の観測とずれることがあります。</p>
 <p><b>Q. 彗星を増やせますか。</b> 無料版は 10P/Tempel 2 専用です。ほかの彗星は Cometarium Pro でご利用ください。</p>
 
 <h2 id="en">English Manual</h2>
 <p>Cometarium shows where a comet is, when it can be seen and how its tails lie on
-the sky. The background stars come from the Bright Star Catalogue (to V = 6.5),
-the comet's position from an N-body integration started from the NASA/JPL orbit
+the sky. Background stars come from the Bright Star Catalogue (to V = 6.5), the
+comet's position from an N-body integration started at the NASA/JPL orbit
 solution, and the tails from radiation-pressure and solar-wind models.
-<b>The app never uses the network</b>: everything it needs is bundled.
-The free edition covers <b>10P/Tempel 2</b>, which passed perihelion on
-5 August 2026 and comes within 0.4 astronomical units of Earth.</p>
+<b>The app never uses the network.</b> The free edition covers
+<b>10P/Tempel 2</b>.</p>
 
-<h3>The screen</h3>
-<p>See figure 1 above. ① the comet on show, ② the date slider (opens at today),
-③ reset / zoom out / zoom in and six display layers, ④ the comet's path across
-the sky, ⑤ dates along the path, ⑥ perihelion, ⑦ an observed outburst,
-⑧ the comet at the chosen instant with its dust and plasma tails, ⑨ the numbers
-for that instant.</p>
-<p>Star colour follows the B−V colour index (blue-white is hot, orange is cool)
-and star size follows visual magnitude.</p>
+<h3>The bar at the top</h3>
+<p>The app icon (a link to the author), the comet menu, <b>EN</b> for the
+language and the <b>red dot</b> for night mode. Below it the date and time —
+type into them if you like — the clock and its offset from UT, and <b>Now</b>.
+Below that the observing site (world capitals and second cities in English),
+a pin that fills in where you are, and the coordinates. On the horizon and
+night panels a row of fine steps appears, with <b>Transit</b> in the middle:
+the moment the comet crosses the meridian that day.</p>
 
-<h3>Controls</h3>
-<ul>
-<li>Drag the slider to change the date; <b>今日</b> returns to today.</li>
-<li><b>＋</b> / <b>−</b> zoom about the comet, so it never escapes the frame;
-on iPhone and iPad you can also pinch. Zoomed all the way out, the chart holds
-the full 24 hours of right ascension and goes no wider.</li>
-<li>Drag the chart to move the field; <b>リセット</b> fits the whole path again.</li>
-<li><b>Drag a label to move it.</b> Near perihelion the comet name, the perihelion
-caption and an outburst caption can land on each other; pull them apart.</li>
-</ul>
-
-<h3>Reading the chart</h3>
-<p>Right ascension runs along the bottom and <b>increases to the left</b>, as the
-sky does when you face south; declination runs up the side. Both are J2000.0.
-The orange fan at the comet is the dust tail (a family of syndynes — the curves
-traced by grains of one size), and the cyan line is the plasma tail. Zoom in to
-see them; at full-path scale they are smaller than the marker.</p>
-<p>The date ticks subdivide themselves: their spacing follows how fast the comet
-moves <b>on screen</b>, so zooming in turns months into halves of months and then
-into ten-day steps (figure 2).</p>
-
-<h3>The numbers</h3>
+<h3>The seven panels</h3>
 <table>
-<tr><th>Field</th><th>Meaning</th></tr>
-<tr><td>赤経 / 赤緯 (J2000)</td><td>Right ascension and declination, geocentric apparent place</td></tr>
-<tr><td>日心距離 r</td><td>Sun–comet distance (au)</td></tr>
-<tr><td>地心距離 Δ</td><td>Earth–comet distance (au)</td></tr>
-<tr><td>太陽離角</td><td>Solar elongation (0° = towards the Sun, 180° = opposite it)</td></tr>
-<tr><td>位相角</td><td>Phase angle, Sun–comet–Earth</td></tr>
-<tr><td>予測等級 m₁</td><td>Predicted total magnitude, from a light curve fitted to COBS observations</td></tr>
-<tr><td>日心位置(黄道)</td><td>Heliocentric ecliptic x, y, z (au)</td></tr>
+<tr><th>Panel</th><th>What it shows</th></tr>
+<tr><td>Sky</td><td>The path among the stars, in J2000 equatorial coordinates. Dates subdivide themselves as you zoom in.</td></tr>
+<tr><td>Horizon</td><td>The comet where you would look for it: sky colour by solar altitude, ground, compass, altitude scale. The sky is drawn to 20° below the horizon.</td></tr>
+<tr><td>Night</td><td>One night of altitudes for comet, Sun and Moon, with rise/transit/set, moon phase and sky brightness.</td></tr>
+<tr><td>Orbits</td><td>The Sun, the eight planets and the comet in three dimensions, from any angle.</td></tr>
+<tr><td>Light</td><td>COBS observations, the fitted light curve with its ±3σ band, and the fit's own numbers.</td></tr>
+<tr><td>Tail</td><td>Syndynes, synchrones and the plasma tail, computed live from β, the emission window, the wind speed and the length you choose.</td></tr>
+<tr><td>Details</td><td>Thirty numbers for the instant on show, from right ascension to the orbital elements.</td></tr>
 </table>
-<p>Distances and positions are corrected for light time: they describe the comet
-at the moment the light now reaching Earth left it.</p>
+<p>Drag to move, pinch to zoom, Reset to start again. On the Mac the arrow keys
+walk the horizon view.</p>
 
 <h3>Free edition and Pro</h3>
-<p>The free edition follows 10P/Tempel 2 only, and in the solar-system 3D view it
-can add 220P alongside it. Cometarium Pro carries the whole catalogue, plus
-photograph overlay with aperture photometry, FITS/WCS handling and plate solving,
-and the Bortle survival chart. Version 1.0 ships the sky path and the ephemeris
-readout; the other panels arrive in updates.</p>
+<p>The free edition follows 10P/Tempel 2, and can draw 220P alongside it in the
+solar-system view. Cometarium Pro carries the whole catalogue, measures your own
+photographs (astrometry, aperture photometry, FITS/WCS, plate solving), refits
+the light curve from the newest COBS data, and adds the Bortle survival chart.</p>
 
 <h3>Sources</h3>
 <p>Orbits and ephemerides: NASA/JPL Horizons, SBDB and NAIF SPICE (DE440, sb441).
-Integration: ASSIST/REBOUND, including planetary and main-belt perturbations and
-non-gravitational acceleration. Photometry: COBS Comet Observation Database.
-Stars: Bright Star Catalogue. Tails: Finson–Probstein syndynes and synchrones,
-Burns–Lamy–Soter β, and a solar-wind windsock model.
+Integration: ASSIST/REBOUND, with planetary and main-belt perturbations and
+non-gravitational acceleration. Photometry: COBS. Stars: Bright Star Catalogue.
+Sun, Moon and planets: Meeus, <i>Astronomical Algorithms</i>, and Standish's
+approximate elements, computed inside the app. Tails: Finson–Probstein syndynes
+and synchrones, Burns–Lamy–Soter β, and a solar-wind windsock model. Sky
+brightness: Krisciunas &amp; Schaefer 1991.
 Credit: NASA/JPL-Caltech; comet magnitude data courtesy of COBS.</p>
 
 <h2 id="privacy">プライバシー / Privacy</h2>

@@ -1,155 +1,112 @@
 # Cometarium User Manual (Free Edition 1.0)
 
 Cometarium shows where a comet is, when it can be seen and how its tails lie on
-the sky, for iPhone, iPad and Mac. The background stars come from a real star
-catalogue, the comet's position from an N-body integration started at the
-NASA/JPL orbit solution, and the tails from radiation-pressure and solar-wind
-models.
+the sky, for iPhone, iPad and Mac. The stars come from a real catalogue, the
+comet's position from an N-body integration started at the NASA/JPL orbit
+solution, and the tails from radiation-pressure and solar-wind models.
 
-- The free edition covers **10P/Tempel 2** (perihelion 5 August 2026, closest to
-  Earth at 0.4 au)
+- The free edition covers **10P/Tempel 2** (perihelion 5 August 2026)
 - **Fully offline.** No network, no data collection, no advertising
 - Requires iOS/iPadOS 17 or later, macOS 14 or later
 
 ---
 
-## 1. The screen
+## 1. The bar at the top
 
-![The screen](img/fig_overview.jpg)
+![Sky](img/fig_sky.jpg)
 
-| No. | Item | What it is |
-|---|---|---|
-| ① | App and comet | The comet on show |
-| ② | Date slider | Any instant inside the bundled span; opens at today |
-| ③ | Controls | Reset, zoom out −, zoom in ＋, and six display layers |
-| ④ | Sky path | The comet's track across the sky (cyan) |
-| ⑤ | Date ticks | Dates along the path; large dots are the first of a month |
-| ⑥ | Perihelion | Closest approach to the Sun, with its date |
-| ⑦ | Outburst | An observed sudden brightening: place, date and amplitude |
-| ⑧ | The comet now | The comet at the chosen instant, with dust and plasma tails |
-| ⑨ | Ephemeris | The numbers for that instant |
+The app icon (a link to the author), the comet menu, **EN** for the language and
+the **red dot** for night mode. Then the date and time — type into them if you
+like — the clock and its offset from UT, and **Now**. Then the observing site
+(capitals and second cities), a pin that fills in where you are, and the
+coordinates. On the horizon and night panels a row of fine steps appears with
+**Transit** in the middle: the moment the comet crosses the meridian that day.
 
-Star colour follows the B−V colour index (blue-white is hot, orange is cool) and
-star size follows visual magnitude.
+Drag to move, pinch to zoom, Reset to start again. On the Mac the arrow keys
+walk the horizon view.
 
-## 2. Controls
+## 2. Sky
 
-| To do this | Mac | iPhone / iPad |
-|---|---|---|
-| Change the date | Drag the slider | Drag the slider |
-| Back to today | 今日 button | 今日 button |
-| Zoom | ＋ / − | ＋ / −, or pinch |
-| Move the field | Drag the chart | Drag the chart |
-| Fit the whole path | リセット | リセット |
-| Move a label | Drag the label | Drag the label |
+The path among the stars in J2000 equatorial coordinates. Right ascension
+increases to the left, as it does facing south. The date ticks subdivide
+themselves as you zoom in. Star colour follows the B−V index, size the visual
+magnitude. The comet carries the tail set on the Tail panel.
 
-Zoom works **about the comet**, so it never escapes the frame. Zoomed all the way
-out the chart holds the full 24 hours of right ascension and goes no wider.
+## 3. Horizon
 
-**Labels can be dragged.** Around perihelion the comet name, the perihelion
-caption and an outburst caption can land on one another; pull them apart.
-リセット puts them back.
+![Horizon](img/fig_horizon.jpg)
 
-### Display layers
+Your own sky, centred on the comet: the sky takes its colour from the Sun's
+altitude, with the ground, the compass and an altitude scale. Azimuth increases
+to the right. The grid follows the field — 10° steps at a 60° field, 1° at 10° —
+and the sky is drawn to 20° below the horizon, so what is about to rise can be
+seen waiting. When the comet is under the ground the view stops at the horizon.
 
-| Button | Shows |
-|---|---|
-| 星名 | Bayer designations of the brighter stars (e.g. α CMa) |
-| 星座線 | Constellation figures |
-| 星座名 | Constellation names, thinned where they would collide |
-| 彗星名 | The comet's name beside its marker |
-| 近日点 | Perihelion mark and date |
-| バースト | Outburst mark, date and amplitude |
+## 4. Night
 
-## 3. Reading the chart
+![Night](img/fig_night.jpg)
 
-Right ascension runs along the bottom and **increases to the left**, as the sky
-does when you face south; declination runs up the side. Both are J2000.0.
+One night of altitudes for the comet, the Sun and the Moon, with rise, transit
+and set, the Moon's age and phase, lunar elongation and sky brightness.
 
-The orange fan at the comet is the dust tail — a family of syndynes, the curves
-traced by grains of one size, swept back by the Sun's radiation pressure. The
-cyan line is the plasma tail, which follows the solar wind almost straight. At
-full-path scale they are smaller than the marker, so zoom in to see them.
+## 5. Orbits
 
-## 4. What zooming changes
+![Orbits](img/fig_orbits.jpg)
 
-![Zoomed in](img/fig_zoom.jpg)
+The Sun, the eight planets and the comet in three dimensions. Drag to turn the
+view; centre it on the Sun, the Earth or the comet; add other comets alongside
+(220P in the free edition).
 
-The spacing of the date ticks follows how fast the comet moves **on screen**, so
-zooming in turns months into halves of months and then into ten-day steps (here
-8/16, 8/31, 9/15, 9/30). Fainter stars appear and more of them are named. Where
-labels would collide they move to the other side of the path, and if that is
-crowded too only the dot is kept.
+## 6. Light
 
-## 5. The numbers
+![Light](img/fig_light.jpg)
 
-| Field | Meaning |
-|---|---|
-| 赤経 / 赤緯 (J2000) | Right ascension and declination, geocentric apparent place |
-| 日心距離 r | Sun–comet distance (au; 1 au ≈ 149.6 million km) |
-| 地心距離 Δ | Earth–comet distance (au) |
-| 太陽離角 | Solar elongation (0° towards the Sun, 180° opposite it) |
-| 位相角 | Phase angle, Sun–comet–Earth |
-| 予測等級 m₁ | Predicted total magnitude, from a light curve fitted to COBS observations |
-| 日心位置 (黄道) | Heliocentric ecliptic x, y, z (au) |
+COBS visual and CCD observations under the fitted light curve and its ±3σ band,
+with the fit's own numbers: `m₁ = H₀ + 5 log Δ + 2.5 n log r`, H₀ and n either
+side of perihelion, the number of observations and when COBS was read.
 
-Distances and positions are corrected for light time: they describe the comet at
-the moment the light now reaching Earth left it.
+## 7. Tail
 
-## 6. On iPhone and iPad
+![Tail](img/fig_tail.jpg)
+
+Position angle from the nucleus, north up and east left. Choose the β grid, how
+far back emission is followed (3 to 90 days), the solar wind speed and the
+length, and the syndynes, synchrones and plasma tail are computed on the spot —
+and drawn on the sky and horizon panels too.
+
+## 8. Details
+
+![Details](img/fig_now.jpg)
+
+Thirty numbers for the instant on show, corrected for light time.
+
+## 9. On iPhone
 
 ![iPhone](img/fig_iphone.jpg)
 
-![iPad](img/fig_ipad.jpg)
-
-Every device draws the same content. The iPad's wider field fits more star and
-constellation names. On narrow screens the row of control buttons scrolls
-sideways.
-
-## 7. Free edition and Pro
+## 10. Free edition and Pro
 
 | | Cometarium (free) | Cometarium Pro |
 |---|---|---|
-| Comets | 10P/Tempel 2 only | The whole catalogue |
-| Sky path and ephemeris | yes | yes |
-| Light curve, tail shape, observability, solar-system 3D | yes | yes |
-| Comparison comets in 3D | 220P only | any |
-| Photograph overlay, photometry, FITS/WCS, plate solving | — | yes |
+| Comets | 10P/Tempel 2 only | the whole catalogue |
+| All seven panels | yes | yes |
+| Comparison comets in Orbits | 220P only | any |
+| Photograph astrometry, photometry, tail analysis | — | yes |
+| Refit the light curve from the newest COBS data | — | yes |
 | Bortle survival chart | — | yes |
 
-Version 1.0 ships all six panels: the sky path, the light curve, the tail
-shape, observability for a chosen prefecture, the solar-system 3D view, and
-the ephemeris readout.
+## 11. Sources
 
-## 8. Sources
-
-| | |
-|---|---|
-| Orbits and ephemerides | NASA/JPL Horizons, SBDB, NAIF SPICE (DE440, sb441) |
-| Integration | ASSIST/REBOUND N-body, with planetary and main-belt perturbations and non-gravitational acceleration |
-| Photometry | COBS (Comet Observation Database) |
-| Stars | Bright Star Catalogue (V ≤ 6.5) |
-| Tails | Finson–Probstein syndynes and synchrones, Burns–Lamy–Soter β, solar-wind windsock model |
+Orbits and ephemerides: NASA/JPL Horizons, SBDB, NAIF SPICE (DE440, sb441).
+Integration: ASSIST/REBOUND with planetary and main-belt perturbations and
+non-gravitational acceleration. Photometry: COBS. Stars: Bright Star Catalogue;
+constellation figures from d3-celestial. Sun, Moon and planets: Meeus,
+*Astronomical Algorithms*, and Standish's approximate elements. Tails:
+Finson–Probstein, Burns–Lamy–Soter β, solar-wind windsock. Sky brightness:
+Krisciunas & Schaefer 1991.
 
 Credit: NASA/JPL-Caltech.
 Comet magnitude data courtesy of COBS Comet Observation Database — <https://cobs.si>
-
-## 9. Questions
-
-**Does it work offline?** Yes. Positions and the star chart are computed inside
-the app; it never contacts a server.
-
-**What span can I show?** Each comet is bundled with a span covering its
-apparition. The ends of the slider are the ends of that span.
-
-**How accurate is it?** Positions come from an N-body integration started at the
-JPL orbit solution and match observation closely. A comet's **brightness**,
-however, is inherently hard to predict and can depart from what is observed.
-
-**The labels overlap.** Drag them apart; リセット restores them.
-
-**Can I add comets?** The free edition follows 10P/Tempel 2 only. Cometarium Pro
-carries the whole catalogue.
 
 ---
 
