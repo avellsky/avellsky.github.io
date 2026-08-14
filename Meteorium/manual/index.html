@@ -17,6 +17,15 @@
     border-bottom: 1px solid rgba(255,255,255,.14); padding-bottom: 6px; }
   h3 { color: #e8e7df; font-size: 15px; margin-top: 22px; }
   .sub { color: #898781; margin-bottom: 20px; }
+  .masthead { display: flex; align-items: center; gap: 18px;
+    margin-bottom: 20px; }
+  .masthead img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+  .masthead h1 { margin-top: 0; }
+  .masthead .sub { margin-bottom: 0; }
+  @media (max-width: 520px) {
+    .masthead { gap: 14px; }
+    .masthead img { width: 68px; height: 68px; border-radius: 16px; }
+  }
   table { border-collapse: collapse; width: 100%; font-size: 14px; }
   th, td { border: 1px solid rgba(255,255,255,.14); padding: 7px 10px;
     text-align: left; vertical-align: top; }
@@ -41,9 +50,14 @@
 </head>
 <body><div class="wrap">
 
-<h1>Meteorium</h1>
-<div class="sub">流星ダストトレイル・ビューア — ユーザーマニュアル(無料版)/
-User Manual (Free Edition)</div>
+<header class="masthead">
+  <img src="../icon.png" alt="">
+  <div>
+    <h1>Meteorium</h1>
+    <div class="sub">流星ダストトレイル・ビューア — ユーザーマニュアル(無料版)/
+    User Manual (Free Edition)</div>
+  </div>
+</header>
 <div class="nav">
   <a href="#ja">日本語</a><a href="#en">English</a><a href="mac.html">Mac 版 / Mac edition</a><a href="#privacy">プライバシー / Privacy</a>
 </div>
