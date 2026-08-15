@@ -88,16 +88,14 @@ Thirty numbers for the instant on show, corrected for light time.
 
 ![iPhone](img/fig_iphone_en.jpg)
 
-## 10. Free edition and Pro
+## 10. What is inside
 
-| | Cometarium (free) | Cometarium Pro |
-|---|---|---|
-| Comets | 10P/Tempel 2 only | the whole catalogue |
-| All seven panels | yes | yes |
-| Comparison comets in Orbits | 220P only | any |
-| Photograph astrometry, photometry, tail analysis | — | yes |
-| Refit the light curve from the newest COBS data | — | yes |
-| Bortle survival chart | — | yes |
+| Item | What |
+|---|---|
+| Comet | 10P/Tempel 2 |
+| Panels | Sky, Horizon, Night, Orbits, Light, Tail, Details |
+| Comparison orbit in Orbits | 220P/McNaught |
+| Computation | all on the device: no network, no account |
 
 ## 11. Sources
 
