@@ -7,28 +7,32 @@ GitHub Pages で公開しているサイトの中身です。ここに置いた�
 
 | 場所 | 公開先 | 内容 |
 |---|---|---|
-| `Astrarium/index.html` | [/Astrarium/](https://avellsky.github.io/Astrarium/) | Astrarium のサポートページ。App Store へのリンク、マニュアル、連絡先 |
-| `Astrarium/manual/` | [/Astrarium/manual/](https://avellsky.github.io/Astrarium/manual/) | 使用マニュアル（PDF 4 冊） |
-| `Astrarium/privacy-policy.ja.html` | [/Astrarium/privacy-policy.ja.html](https://avellsky.github.io/Astrarium/privacy-policy.ja.html) | プライバシーポリシー（日本語） |
-| `Astrarium/privacy-policy.en.html` | [/Astrarium/privacy-policy.en.html](https://avellsky.github.io/Astrarium/privacy-policy.en.html) | プライバシーポリシー（英語） |
-| `Astrarium/icon.png` | — | アプリのアイコン |
+| `Meteorium/` | [/Meteorium/](https://avellsky.github.io/Meteorium/) | Meteorium のサポートページ一式 |
+| `Cometarium/` | [/Cometarium/](https://avellsky.github.io/Cometarium/) | Cometarium のサポートページ一式 |
 
-App Store に登録した「サポート URL」と「プライバシーポリシー URL」がここを指しています。
-**この 2 か所は常に到達できる状態に保つ必要があります。**
+内訳は下のとおりです。
 
-### 使用マニュアル（バージョン 1.1 対応）
+## Astrarium はここではない
 
-| | 日本語 | English |
-|---|---|---|
-| iPhone / iPad 版 | [astrarium-manual-ja.pdf](Astrarium/manual/astrarium-manual-ja.pdf) | [astrarium-manual-en.pdf](Astrarium/manual/astrarium-manual-en.pdf) |
-| Mac 版 | [astrarium-manual-mac-ja.pdf](Astrarium/manual/astrarium-manual-mac-ja.pdf) | [astrarium-manual-mac-en.pdf](Astrarium/manual/astrarium-manual-mac-en.pdf) |
+[/Astrarium/](https://avellsky.github.io/Astrarium/) は、**別のリポジトリ**
+[avellsky/Astrarium](https://github.com/avellsky/Astrarium) の `gh-pages` 枝が
+出しています。GitHub Pages は、同じ名前のリポジトリのプロジェクトページを
+利用者サイトの同名フォルダより先に取るためです。
 
-## 更新のしかた
+以前はここにも `Astrarium/` を置いていましたが、**影になっていて一度も公開されて
+いませんでした**（2026-08-14 に入れた表紙のロゴが site に出ないので気づいた）。
+二重に持つと必ず片方が古くなるので、2026-08-16 に消しました。
 
-マニュアルの PDF は Astrarium の作業リポジトリで `docs/MANUAL_*.md` から生成し、
-`Astrarium/manual/` を置き換えて push します。同じ PDF を
-[avellsky/Astrarium](https://github.com/avellsky/Astrarium) の `main` と `gh-pages`
-にも置いているので、更新は 3 か所そろえます。
+Astrarium のサポートページ・プライバシーポリシー・マニュアルを更新するときは、
+
+    cd astrarium/apps/Astrarium
+    git fetch git@github.com:avellsky/Astrarium.git gh-pages:refs/remotes/gh/gh-pages
+    git worktree add --detach <一時ディレクトリ> gh/gh-pages
+    # index.html / icon*.png / manual/*.pdf を入れ替えて commit
+    git push git@github.com:avellsky/Astrarium.git HEAD:gh-pages
+
+の順です（`origin` は HTTPS で認証が通らないので、SSH の URL を直に指定します）。
+App Store の「サポート URL」「プライバシーポリシー URL」もこの枝が答えています。
 
 ## ここに無いもの
 
